@@ -37,9 +37,9 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
 
         slides = [
-            .init(image: UIImage(named:"onboard01")!, title: "اقتراح الوصفات", description: "بنوفر الوصفة من المكونات المتوفرة في البيت في صورة فيديو وفي صورة كتابة"),
-            .init(image: UIImage(named:"onboard02")!, title: "اونلاين ماركت", description: "بنوفر كل المكونات الي ممكن تحتاجها في البيت وهيفكرك بالحاجات اللي خلصت عندك"),
-            .init(image: UIImage(named:"onboard03")!, title: "المود", description: "بنوفر مود مختلف انت بتختاره \n مود عادي - مود هيلثي - مود نباتي ـ مود كيتو")
+            .init(image: UIImage(named:"onboard01")!, title: NSLocalizedString("onboard01Title", comment: ""), description:  NSLocalizedString("onboard01Description", comment: "")),
+            .init(image: UIImage(named:"onboard02")!, title: NSLocalizedString("onboard02Title", comment: ""), description:  NSLocalizedString("onboard02Description", comment: "")),
+            .init(image: UIImage(named:"onboard03")!, title: NSLocalizedString("onboard03Title", comment: ""), description:  NSLocalizedString("onboard03Description", comment: ""))
         ]
         onboardingCollectionView.delegate = self
         onboardingCollectionView.dataSource = self
@@ -69,6 +69,8 @@ class OnboardingViewController: UIViewController {
         descriptionLabel.text = slides[0].description
         startBtn.cornerRedius = 23
         curvedVeiw.cornerRedius = 20
+        skipBtn.setTitle(NSLocalizedString("Skip", comment: ""), for: .normal)
+        
     }
     
 }

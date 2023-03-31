@@ -11,7 +11,6 @@
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
 		A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224B829D5B96000F07104 /* LaunchScreen.storyboard */; };
-		A19224D229D5BB9000F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224D129D5BB9000F07104 /* Onboarding.storyboard */; };
 		A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224D729D5C2F300F07104 /* OnboardingCollectionViewCell.swift */; };
 		A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19224D829D5C2F300F07104 /* OnboardingCollectionViewCell.xib */; };
 		A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */; };
@@ -19,6 +18,8 @@
 		A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DF29D5C3C400F07104 /* UIView+Extension.swift */; };
 		A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */; };
 		A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224E529D5C61500F07104 /* OnboardingViewController.swift */; };
+		A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224F629D714C500F07104 /* Onboarding.storyboard */; };
+		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,6 @@
 		A19224B629D5B96000F07104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19224B929D5B96000F07104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19224BB29D5B96000F07104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A19224D129D5BB9000F07104 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A19224D729D5C2F300F07104 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A19224D829D5C2F300F07104 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -36,6 +36,10 @@
 		A19224DF29D5C3C400F07104 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
 		A19224E529D5C61500F07104 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A19224F529D714C500F07104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		A19224F829D714CC00F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Onboarding.strings; sourceTree = "<group>"; };
+		A19224FC29D7150600F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,7 @@
 		A19224CE29D5BAEC00F07104 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				A19224D129D5BB9000F07104 /* Onboarding.storyboard */,
+				A19224F629D714C500F07104 /* Onboarding.storyboard */,
 				A19224E529D5C61500F07104 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A19224B629D5B96000F07104 /* Assets.xcassets */,
+				A19224FD29D7150600F07104 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A19224A129D5B95700F07104;
 			productRefGroup = A19224AB29D5B95700F07104 /* Products */;
@@ -199,7 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A19224D229D5BB9000F07104 /* Onboarding.storyboard in Resources */,
+				A19224FB29D7150600F07104 /* Localizable.strings in Resources */,
+				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
 				A19224B729D5B96000F07104 /* Assets.xcassets in Resources */,
@@ -235,6 +242,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		A19224F629D714C500F07104 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19224F529D714C500F07104 /* Base */,
+				A19224F829D714CC00F07104 /* ar */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		A19224FD29D7150600F07104 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19224FC29D7150600F07104 /* ar */,
+				A19224FE29D7150A00F07104 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -242,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -302,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

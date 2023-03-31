@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Hanakol Aah?
+
+  Created by Youssef Eldeeb on 31/03/2023.
+  
+*/
+
+"onboard01Title" = "اقتراح الوصفات";
+"onboard02Title" = "اونلاين ماركت";
+"onboard03Title" = "المود";
+"onboard01Description" = "بنوفر الوصفة من المكونات المتوفرة في البيت في صورة فيديو وفي صورة كتابة";
+"onboard02Description" = "بنوفر كل المكونات الي ممكن تحتاجها في البيت وهيفكرك بالحاجات اللي خلصت عندك";
+"onboard03Description" = "بنوفر مود مختلف انت بتختاره \n مود عادي - مود هيلثي - مود نباتي ـ مود كيتو";
+"Skip" = "تخطي";
