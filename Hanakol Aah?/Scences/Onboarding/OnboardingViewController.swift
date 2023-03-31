@@ -1,0 +1,97 @@
+//
+//  OnboardingViewController.swift
+//  Hanakol Aah?
+//
+//  Created by Youssef Eldeeb on 30/03/2023.
+//
+
+import UIKit
+
+class OnboardingViewController: UIViewController {
+
+    @IBOutlet weak var skipBtn: UIButton!
+    @IBOutlet weak var onboardingCollectionView: UICollectionView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    
+    var slides: [OnboardingSlides] = []
+    var currentPage = 0 {
+        didSet{
+            if currentPage == slides.count - 1 {
+                pageControl.isHidden = true
+                startBtn.isHidden = false
+                skipBtn.isHidden = true
+            }else{
+                pageControl.isHidden = false
+                startBtn.isHidden = true
+                skipBtn.isHidden = false
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        slides = [
+            .init(image: UIImage(named:"onboard01")!, title: "اقتراح الوصفات", description: "بنوفر الوصفة من المكونات المتوفرة في البيت في صورة فيديو وفي صورة كتابة"),
+            .init(image: UIImage(named:"onboard02")!, title: "اونلاين ماركت", description: "بنوفر كل المكونات الي ممكن تحتاجها في البيت وهيفكرك بالحاجات اللي خلصت عندك"),
+            .init(image: UIImage(named:"onboard03")!, title: "المود", description: "بنوفر مود مختلف انت بتختاره \n مود عادي - مود هيلثي - مود نباتي ـ مود كيتو")
+        ]
+        onboardingCollectionView.delegate = self
+        onboardingCollectionView.dataSource = self
+        initUI()
+    }
+    
+    @IBAction func skipBtn(_ sender: UIButton) {
+        currentPage += 1
+        let indexPath = IndexPath(item: currentPage, section: 0)
+        onboardingCollectionView.isPagingEnabled = false
+        onboardingCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        onboardingCollectionView.isPagingEnabled = true
+        pageControl.currentPage = currentPage
+        print("\n currentPage is  \(currentPage) \n")
+        titleLabel.text = slides[currentPage].title
+        descriptionLabel.text = slides[currentPage].description
+    }
+    @IBAction func startBtn(_ sender: UIButton) {
+    }
+    
+    
+    func initUI(){
+        onboardingCollectionView.registerNib(cell: OnboardingCollectionViewCell.self)
+        pageControl.numberOfPages = slides.count
+        pageControl.isHidden = false
+        startBtn.isHidden = true
+        titleLabel.text = slides[0].title
+        descriptionLabel.text = slides[0].description
+    }
+    
+}
+
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        slides.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = onboardingCollectionView.dequeue(indexPath: indexPath) as OnboardingCollectionViewCell
+        cell.setImage(image: slides[indexPath.row].image)
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: onboardingCollectionView.frame.width, height: onboardingCollectionView.frame.height)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let width = scrollView.frame.width
+        currentPage = Int(scrollView.contentOffset.x / width)
+        pageControl.currentPage = currentPage
+        titleLabel.text = slides[currentPage].title
+        descriptionLabel.text = slides[currentPage].description
+    }
+    
+    
+}

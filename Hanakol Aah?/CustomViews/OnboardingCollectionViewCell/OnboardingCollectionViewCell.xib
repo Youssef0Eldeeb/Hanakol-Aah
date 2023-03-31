@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="Hanakol_Aah_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="504"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="504"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-l4-Ki0">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="504"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard01" translatesAutoresizingMaskIntoConstraints="NO" id="3OW-Aj-cZh">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3OW-Aj-cZh" firstAttribute="leading" secondItem="IUw-l4-Ki0" secondAttribute="leading" id="U7m-vr-No5"/>
+                            <constraint firstItem="3OW-Aj-cZh" firstAttribute="top" secondItem="IUw-l4-Ki0" secondAttribute="top" id="UNJ-vH-a5y"/>
+                            <constraint firstAttribute="trailing" secondItem="3OW-Aj-cZh" secondAttribute="trailing" id="Uga-lx-mTT"/>
+                            <constraint firstAttribute="bottom" secondItem="3OW-Aj-cZh" secondAttribute="bottom" id="b1y-Zf-9qy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IUw-l4-Ki0" secondAttribute="bottom" id="IaQ-d3-TYw"/>
+                <constraint firstItem="IUw-l4-Ki0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rqz-8k-QPW"/>
+                <constraint firstItem="IUw-l4-Ki0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UW1-q0-USU"/>
+                <constraint firstAttribute="trailing" secondItem="IUw-l4-Ki0" secondAttribute="trailing" id="nm0-CF-Usf"/>
+            </constraints>
+            <size key="customSize" width="366" height="504"/>
+            <connections>
+                <outlet property="onboardingImage" destination="3OW-Aj-cZh" id="AOV-jK-dBS"/>
+            </connections>
+            <point key="canvasLocation" x="143.5114503816794" y="60.563380281690144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboard01" width="360" height="436"/>
+    </resources>
+</document>
