@@ -16,6 +16,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var curvedVeiw: UIView!
     
     var slides: [OnboardingSlides] = []
     var currentPage = 0 {
@@ -52,7 +53,6 @@ class OnboardingViewController: UIViewController {
         onboardingCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         onboardingCollectionView.isPagingEnabled = true
         pageControl.currentPage = currentPage
-        print("\n currentPage is  \(currentPage) \n")
         titleLabel.text = slides[currentPage].title
         descriptionLabel.text = slides[currentPage].description
     }
@@ -67,6 +67,8 @@ class OnboardingViewController: UIViewController {
         startBtn.isHidden = true
         titleLabel.text = slides[0].title
         descriptionLabel.text = slides[0].description
+        startBtn.cornerRedius = 23
+        curvedVeiw.cornerRedius = 20
     }
     
 }

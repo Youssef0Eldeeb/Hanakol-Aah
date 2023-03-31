@@ -83,8 +83,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-vX-8lJ">
                                                         <rect key="frame" x="0.0" y="110" width="390" height="116.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-1H-bl8">
-                                                                <rect key="frame" x="16" y="33" width="358" height="50.5"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-1H-bl8" customClass="GradientColorBtn" customModule="Hanakol_Aah_" customModuleProvider="target">
+                                                                <rect key="frame" x="16" y="33" width="358" height="53.5"/>
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.30588235289999999" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -108,7 +108,7 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="7Yb-Df-0ha" firstAttribute="centerX" secondItem="hxy-vX-8lJ" secondAttribute="centerX" id="JiQ-au-02i"/>
-                                                            <constraint firstAttribute="bottom" secondItem="6e2-1H-bl8" secondAttribute="bottom" constant="33" id="NrH-xg-ywZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="6e2-1H-bl8" secondAttribute="bottom" constant="30" id="NrH-xg-ywZ"/>
                                                             <constraint firstItem="7Yb-Df-0ha" firstAttribute="centerY" secondItem="hxy-vX-8lJ" secondAttribute="centerY" id="PQT-hf-gTc"/>
                                                             <constraint firstAttribute="trailing" secondItem="6e2-1H-bl8" secondAttribute="trailing" constant="16" id="YdF-DY-gJ6"/>
                                                             <constraint firstItem="6e2-1H-bl8" firstAttribute="leading" secondItem="hxy-vX-8lJ" secondAttribute="leading" constant="16" id="bXU-YW-crt"/>
@@ -146,6 +146,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curvedVeiw" destination="nYd-dC-hfa" id="OLR-D9-bVh"/>
                         <outlet property="descriptionLabel" destination="pV8-de-NdV" id="D1q-zW-I12"/>
                         <outlet property="onboardingCollectionView" destination="86V-Ug-Mcw" id="cIR-je-ZqK"/>
                         <outlet property="pageControl" destination="7Yb-Df-0ha" id="WRN-PZ-Yvn"/>
