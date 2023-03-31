@@ -44,6 +44,8 @@ class OnboardingViewController: UIViewController {
         onboardingCollectionView.delegate = self
         onboardingCollectionView.dataSource = self
         initUI()
+        // change srolling dircation if collctionView to RTL
+//        onboardingCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
     }
     
     @IBAction func skipBtn(_ sender: UIButton) {
@@ -69,8 +71,9 @@ class OnboardingViewController: UIViewController {
         descriptionLabel.text = slides[0].description
         startBtn.cornerRedius = 23
         curvedVeiw.cornerRedius = 20
-        skipBtn.setTitle(NSLocalizedString("Skip", comment: ""), for: .normal)
-        
+        skipBtn.setTitle(NSLocalizedString("onboardingSkipBtn", comment: ""), for: .normal)
+        startBtn.setTitle(NSLocalizedString("onboardingStartBtn", comment: ""), for: .normal)
+//        onboardingCollectionView.collectionViewLayout = RTLCollectionFlow()
     }
     
 }
@@ -82,6 +85,14 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = onboardingCollectionView.dequeue(indexPath: indexPath) as OnboardingCollectionViewCell
+//        cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+//        let currentLanguage = Locale.current.language.languageCode?.identifier
+//        if currentLanguage == "ar"{
+//            
+//            cell.setImage(image: slides.reversed()[indexPath.row].image)
+//        }else{
+//            cell.setImage(image: slides[indexPath.row].image)
+//        }
         cell.setImage(image: slides[indexPath.row].image)
         return cell
     }

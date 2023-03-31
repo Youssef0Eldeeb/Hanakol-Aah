@@ -14,7 +14,7 @@
 		A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224D729D5C2F300F07104 /* OnboardingCollectionViewCell.swift */; };
 		A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19224D829D5C2F300F07104 /* OnboardingCollectionViewCell.xib */; };
 		A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */; };
-		A19224DE29D5C3B100F07104 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DD29D5C3B100F07104 /* UITableView+Extension.swift */; };
+		A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DD29D5C3B100F07104 /* UICollectionView+Extension.swift */; };
 		A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224DF29D5C3C400F07104 /* UIView+Extension.swift */; };
 		A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */; };
 		A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224E529D5C61500F07104 /* OnboardingViewController.swift */; };
@@ -32,7 +32,7 @@
 		A19224D729D5C2F300F07104 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A19224D829D5C2F300F07104 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		A19224DD29D5C3B100F07104 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A19224DD29D5C3B100F07104 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		A19224DF29D5C3C400F07104 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
 		A19224E529D5C61500F07104 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */,
-				A19224DD29D5C3B100F07104 /* UITableView+Extension.swift */,
+				A19224DD29D5C3B100F07104 /* UICollectionView+Extension.swift */,
 				A19224DF29D5C3C400F07104 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
@@ -221,7 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
-				A19224DE29D5C3B100F07104 /* UITableView+Extension.swift in Sources */,
+				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,

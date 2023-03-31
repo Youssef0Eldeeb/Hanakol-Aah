@@ -21,3 +21,16 @@ extension UICollectionView{
         return cell
     }
 }
+
+//class RTLCollectionFlow: UICollectionViewFlowLayout{
+//    override var flipsHorizontallyInOppositeLayoutDirection: Bool{
+//        
+//        let currentLanguage = Locale.current.language.languageCode?.identifier
+//        if currentLanguage == "en"{
+//            return false
+//        }else{
+//            return true
+//        }
+//        
+//    }
+//}

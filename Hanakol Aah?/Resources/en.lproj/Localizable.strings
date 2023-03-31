@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Hanakol Aah?
+
+  Created by Youssef Eldeeb on 31/03/2023.
+  
+*/
+
+"onboard01Title" = "Recipe Suggestion";
+"onboard02Title" = "Online Market";
+"onboard03Title" = "Moods";
+"onboard01Description" = "We provide the recipe from the ingredients available at home in the form of a video and in the form of writing";
+"onboard02Description" = "We provide all the ingredients that you may need at home, and it will remind you of the needs that you have.";
+"onboard03Description" = "We offer a different mode, you choose it \nNormal mode - healthy mode - vegetarian mode - keto mode";
+"onboardingSkipBtn" = "Skip";
+"onboardingStartBtn" = "Start";
+
