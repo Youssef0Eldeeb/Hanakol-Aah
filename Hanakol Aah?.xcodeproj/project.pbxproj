@@ -22,6 +22,9 @@
 		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 		A192250D29D8F94200F07104 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192250C29D8F94200F07104 /* Registration.storyboard */; };
 		A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */; };
+		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
+		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
+		A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A192250C29D8F94200F07104 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,8 @@
 		A19224D529D5C2B400F07104 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A1EBC8FA29D9979900AA5C93 /* CustomComponents */,
+				A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */,
 				A19224D629D5C2C000F07104 /* OnboardingCollectionViewCell */,
 			);
 			path = CustomViews;
@@ -158,6 +166,23 @@
 				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */,
+				A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */,
+			);
+			path = RegistrationCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A1EBC8FA29D9979900AA5C93 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +250,7 @@
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
 				A19224B729D5B96000F07104 /* Assets.xcassets in Resources */,
+				A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,12 +264,14 @@
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
+				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
+				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
