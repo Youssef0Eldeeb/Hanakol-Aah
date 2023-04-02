@@ -27,7 +27,7 @@ extension UIView{
     
 }
 
-@IBDesignable class GradientView: UIView {
+ class GradientView: UIView {
     override class var layerClass: AnyClass { CAGradientLayer.self }
     var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
 
@@ -48,7 +48,7 @@ extension UIView{
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
     }
 }
-@IBDesignable class GradientColorBtn: UIButton {
+ class GradientColorBtn: UIButton {
     override class var layerClass: AnyClass { CAGradientLayer.self }
     var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
 

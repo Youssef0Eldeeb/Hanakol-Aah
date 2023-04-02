@@ -15,7 +15,6 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     @IBOutlet weak var curvedVeiw: UIView!
     
     var slides: [OnboardingSlides] = []
@@ -69,7 +68,7 @@ class OnboardingViewController: UIViewController {
         startBtn.isHidden = true
         titleLabel.text = slides[0].title
         descriptionLabel.text = slides[0].description
-        startBtn.cornerRedius = 23
+        startBtn.cornerRedius = 20
         curvedVeiw.cornerRedius = 20
         skipBtn.setTitle(NSLocalizedString("onboardingSkipBtn", comment: ""), for: .normal)
         startBtn.setTitle(NSLocalizedString("onboardingStartBtn", comment: ""), for: .normal)
@@ -88,7 +87,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
 //        cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
 //        let currentLanguage = Locale.current.language.languageCode?.identifier
 //        if currentLanguage == "ar"{
-//            
+//
 //            cell.setImage(image: slides.reversed()[indexPath.row].image)
 //        }else{
 //            cell.setImage(image: slides[indexPath.row].image)
