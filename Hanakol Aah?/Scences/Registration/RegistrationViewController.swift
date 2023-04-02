@@ -10,13 +10,13 @@ import UIKit
 class RegistrationViewController: UIViewController {
 
     @IBOutlet weak var registrationCollectionVeiw: UICollectionView!
-    
+    @IBOutlet weak var registerLabel: UILabel!
     @IBOutlet weak var registerBtn: GradientColorBtn!
-    
     @IBOutlet weak var googleBtn: UIButton!
     @IBOutlet weak var facebookBtn: UIButton!
     @IBOutlet weak var appleBtn: UIButton!
-    
+    @IBOutlet weak var haveAcountLabel: UILabel!
+    @IBOutlet weak var loginAndCreateAcountBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -55,12 +55,37 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = registrationCollectionVeiw.dequeue(indexPath: indexPath) as RegistrationCollectionViewCell
         if indexPath.row == 0 { // signUp cell
+//            print("signUp cell indexPath.row is \(indexPath.row)")
             cell.passForgetContianer.isHidden = true
+            loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
+            
         }else if indexPath.row == 1{ // login cell
-            cell.customizeLogin()
+//            print("Login cell indexPath.row is \(indexPath.row)")
+            cell.userNameContainer.isHidden = true
+            cell.confirmPassContainer.isHidden = true
+            loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
         }
         return cell
     }
+    @objc func slideToLoginCell(_ sender: UIButton){
+        let indexPath = IndexPath(item: 1, section: 0)
+        self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
+        registerBtn.setTitle("تسجيل الدخول", for: .normal)
+        haveAcountLabel.text = "ليس لديك حساب؟"
+        loginAndCreateAcountBtn.setTitle("قم بإنشاء حساب", for: .normal)
+        registrationCollectionVeiw.reloadData()
+    }
+    @objc func slideToSignUpCell(_ sender: UIButton){
+        registerBtn.setTitle("تسجيل", for: .normal)
+        haveAcountLabel.text = "هل لديك حساب بالفعل؟"
+        loginAndCreateAcountBtn.setTitle("قم بتسجيل الدخول", for: .normal)
+        let indexPath = IndexPath(item: 0, section: 0)
+        registrationCollectionVeiw.isPagingEnabled = false
+        self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
+        registrationCollectionVeiw.isPagingEnabled = true
+        registrationCollectionVeiw.reloadData()
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: registrationCollectionVeiw.frame.width, height: registrationCollectionVeiw.frame.height)

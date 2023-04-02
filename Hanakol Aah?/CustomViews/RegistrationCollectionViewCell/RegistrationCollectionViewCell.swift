@@ -22,9 +22,5 @@ class RegistrationCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func customizeLogin(){
-        userNameContainer.isHidden = true
-        confirmPassContainer.isHidden = true
-    }
 
 }
