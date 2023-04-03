@@ -17,7 +17,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var appleBtn: UIButton!
     @IBOutlet weak var haveAcountLabel: UILabel!
     @IBOutlet weak var loginAndCreateAcountBtn: UIButton!
-    
+    @IBOutlet weak var canRegisterUsingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,11 @@ class RegistrationViewController: UIViewController {
         registrationCollectionVeiw.registerNib(cell: RegistrationCollectionViewCell.self)
         registerOptionsBtnUI()
         registerBtn.cornerRedius = registerBtn.frame.size.height / 2
+        canRegisterUsingLabel.text = NSLocalizedString("registerCanLoginUsing", comment: "")
+        registerLabel.text = NSLocalizedString("registerCreateAccount", comment: "")
+        registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
+        haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
+        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
     }
     func registerOptionsBtnUI(){
         
@@ -55,30 +60,36 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = registrationCollectionVeiw.dequeue(indexPath: indexPath) as RegistrationCollectionViewCell
         if indexPath.row == 0 { // signUp cell
-//            print("signUp cell indexPath.row is \(indexPath.row)")
             cell.passForgetContianer.isHidden = true
+            cell.userNameContainer.isHidden = false
+            cell.confirmPassContainer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
             
         }else if indexPath.row == 1{ // login cell
-//            print("Login cell indexPath.row is \(indexPath.row)")
+//            print("Login cell indexPath.row is \(indexPath.rfow)")
             cell.userNameContainer.isHidden = true
             cell.confirmPassContainer.isHidden = true
+            cell.passForgetContianer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
         }
         return cell
     }
     @objc func slideToLoginCell(_ sender: UIButton){
+        registerLabel.text = NSLocalizedString("registerLoginTitle", comment: "")
+        registerBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
+        haveAcountLabel.text = NSLocalizedString("registerHavn'tAcount?", comment: "")
+        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerCreateAccount", comment: ""), for: .normal)
         let indexPath = IndexPath(item: 1, section: 0)
+        registrationCollectionVeiw.isPagingEnabled = false
         self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
-        registerBtn.setTitle("تسجيل الدخول", for: .normal)
-        haveAcountLabel.text = "ليس لديك حساب؟"
-        loginAndCreateAcountBtn.setTitle("قم بإنشاء حساب", for: .normal)
+        registrationCollectionVeiw.isPagingEnabled = true
         registrationCollectionVeiw.reloadData()
     }
     @objc func slideToSignUpCell(_ sender: UIButton){
-        registerBtn.setTitle("تسجيل", for: .normal)
-        haveAcountLabel.text = "هل لديك حساب بالفعل؟"
-        loginAndCreateAcountBtn.setTitle("قم بتسجيل الدخول", for: .normal)
+        registerLabel.text = NSLocalizedString("registerCreateAccount", comment: "")
+        registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
+        haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
+        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
         let indexPath = IndexPath(item: 0, section: 0)
         registrationCollectionVeiw.isPagingEnabled = false
         self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)

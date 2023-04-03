@@ -6,6 +6,7 @@
   
 */
 
+// Onboarding Screen
 "onboard01Title" = "اقتراح الوصفات";
 "onboard02Title" = "اونلاين ماركت";
 "onboard03Title" = "المود";
@@ -14,3 +15,19 @@
 "onboard03Description" = "بنوفر مود مختلف انت بتختاره \n مود عادي - مود هيلثي - مود نباتي ـ مود كيتو";
 "onboardingSkipBtn" = "تخطي";
 "onboardingStartBtn" = "ابدأ";
+
+
+// Registration Screen
+
+"registerLoginTitle" = "تسجيل الدخول";
+"registerCreateAccount" = "إنشاء حساب";
+"registerUsername" = "إسم المستخدم";
+"registerEmail" = "البريد الالكتروني";
+"registerPassword" = "الرقم السري";
+"registerConfirmPass" = "تأكيد الرقم السري";
+"registerForgetPass" = "هل نسيت كلمة السر؟";
+"registerBtn" = "تسجيل";
+"registerCanLoginUsing" = "أو يمكنك التسجيل بإستخدام";
+"registerHaveAcount?" = "هل لديك حساب بالفعل؟";
+"registerHavn'tAcount?" = "ليس لديك حساب؟";
+

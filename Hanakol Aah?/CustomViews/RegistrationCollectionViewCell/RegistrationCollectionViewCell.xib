@@ -171,6 +171,7 @@
             </constraints>
             <size key="customSize" width="385" height="445"/>
             <connections>
+                <outlet property="areForgetPassBtn" destination="Aol-DD-qQI" id="VYm-fM-vWL"/>
                 <outlet property="confirmPassContainer" destination="3aZ-et-gJw" id="KM2-Dl-LQe"/>
                 <outlet property="confirmPassTextField" destination="Qa2-6g-ZGX" id="Uc2-Ae-VKr"/>
                 <outlet property="emailTextField" destination="yMt-Eu-3mx" id="jeb-pU-0mn"/>

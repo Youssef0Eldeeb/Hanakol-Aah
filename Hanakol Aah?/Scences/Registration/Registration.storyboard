@@ -187,18 +187,18 @@
                                                         <rect key="frame" x="0.0" y="140.33333333333337" width="393" height="65"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-tf-gg0">
-                                                                <rect key="frame" x="50" y="0.0" width="293" height="29"/>
+                                                                <rect key="frame" x="30" y="0.0" width="343" height="29"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هل لديك حساب بالفعل؟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYw-xa-0X5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="29"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="233" height="29"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-mG-F5t">
-                                                                        <rect key="frame" x="173" y="0.0" width="120" height="29"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-mG-F5t">
+                                                                        <rect key="frame" x="233" y="0.0" width="110" height="29"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="120" id="Z54-Gg-Lut"/>
+                                                                            <constraint firstAttribute="width" constant="110" id="Z54-Gg-Lut"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -211,9 +211,9 @@
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstItem="mtU-tf-gg0" firstAttribute="leading" secondItem="l3g-lM-nHD" secondAttribute="leading" constant="50" id="Zwe-Kx-5g4"/>
+                                                            <constraint firstItem="mtU-tf-gg0" firstAttribute="leading" secondItem="l3g-lM-nHD" secondAttribute="leading" constant="30" id="Zwe-Kx-5g4"/>
                                                             <constraint firstItem="mtU-tf-gg0" firstAttribute="top" secondItem="l3g-lM-nHD" secondAttribute="top" id="g1k-zR-gNi"/>
-                                                            <constraint firstAttribute="trailing" secondItem="mtU-tf-gg0" secondAttribute="trailing" constant="50" id="x16-U7-xoM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mtU-tf-gg0" secondAttribute="trailing" constant="20" id="x16-U7-xoM"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -264,6 +264,7 @@
                     </view>
                     <connections>
                         <outlet property="appleBtn" destination="LhR-cD-D4E" id="uoP-Q4-nNe"/>
+                        <outlet property="canRegisterUsingLabel" destination="SSc-Aa-vcf" id="i1i-vZ-VBA"/>
                         <outlet property="facebookBtn" destination="IfU-Rb-HHz" id="VmK-QB-0em"/>
                         <outlet property="googleBtn" destination="9TB-ei-08m" id="wqY-zW-pnQ"/>
                         <outlet property="haveAcountLabel" destination="xYw-xa-0X5" id="aPK-Da-No8"/>
@@ -275,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2.2900763358778624" y="66.901408450704224"/>
+            <point key="canvasLocation" x="-83" y="50"/>
         </scene>
     </scenes>
     <resources>

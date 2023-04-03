@@ -5,7 +5,7 @@
   Created by Youssef Eldeeb on 31/03/2023.
   
 */
-
+// Onboarding Screen
 "onboard01Title" = "Recipe Suggestion";
 "onboard02Title" = "Online Market";
 "onboard03Title" = "Moods";
@@ -14,4 +14,18 @@
 "onboard03Description" = "We offer a different mode, you choose it \nNormal mode - healthy mode - vegetarian mode - keto mode";
 "onboardingSkipBtn" = "Skip";
 "onboardingStartBtn" = "Start";
+
+// Registration Screen
+
+"registerLoginTitle" = "Login";
+"registerCreateAccount" = "Create Account";
+"registerUsername" = "Username";
+"registerEmail" = "Email";
+"registerPassword" = "Password";
+"registerConfirmPass" = "Confirm Password";
+"registerForgetPass" = "Are you forgotten your password?";
+"registerBtn" = "Register";
+"registerCanLoginUsing" = "You can register using";
+"registerHaveAcount?" = "Do you already have an account?";
+"registerHavn'tAcount?" = "Do you haven't an account?";
 
