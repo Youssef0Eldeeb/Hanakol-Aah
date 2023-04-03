@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
 //        let controller = OnboardingViewController.instantiateVC(name: .Onboarding)
-        let controller = RegistrationViewController.instantiateVC(name: .Registration)
+        let controller = VerfiyPassViewController.instantiateVC(name: .Registration)
         
         window?.rootViewController = controller
         window?.makeKeyAndVisible()

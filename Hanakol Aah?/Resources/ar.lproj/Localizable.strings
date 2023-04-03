@@ -31,3 +31,16 @@
 "registerHaveAcount?" = "هل لديك حساب بالفعل؟";
 "registerHavn'tAcount?" = "ليس لديك حساب؟";
 
+//Forget Password Screen
+
+"forgetPassTitle" = "نسيت رقمك السري";
+"forgetPassEmail" = "بريدك الالكتروني";
+"forgetPassSend" = "إرسال";
+
+//Verfiy Password Screen
+
+"verfiyEmailTitle" = "تحقق من بريدك الالكتروني";
+"verfiySendCodoTo" = "تم إرسال الكود الي";
+"verfiyWasntSend" = "لم يتم الإرسال؟";
+"verfiyResend" = "إعادة إرسال";
+"verfiy" = "تحقق";

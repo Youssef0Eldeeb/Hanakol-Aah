@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A15D5AF129D9C77C00959EEF /* StraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF029D9C77C00959EEF /* StraightLineView.swift */; };
+		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
+		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		A15D5AF029D9C77C00959EEF /* StraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightLineView.swift; sourceTree = "<group>"; };
+		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
+		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				A192250C29D8F94200F07104 /* Registration.storyboard */,
 				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
+				A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */,
+				A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -264,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
+				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,

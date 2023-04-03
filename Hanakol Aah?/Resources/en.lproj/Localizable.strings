@@ -29,3 +29,17 @@
 "registerHaveAcount?" = "Do you already have an account?";
 "registerHavn'tAcount?" = "Do you haven't an account?";
 
+
+//Forget Password Screen
+
+"forgetPassTitle" = "You forgot your password";
+"forgetPassEmail" = "Your Email";
+"forgetPassSend" = "Send";
+
+//Verfiy Password Screen
+
+"verfiyEmailTitle" = "Check your email";
+"verfiySendCodoTo" = "The code has been sent to";
+"verfiyWasntSend" = "Wasn't it sent?";
+"verfiyResend" = "Resend";
+"verfiy" = "Verfiy";
