@@ -43,3 +43,10 @@
 "verfiyWasntSend" = "Wasn't it sent?";
 "verfiyResend" = "Resend";
 "verfiy" = "Verfiy";
+
+//Create New Password Screen
+
+"createPassTitle" = "Create Password";
+"createPassPass" = "Password";
+"createPassConfirmPass" = "Confirm Password";
+"createPassSave" = "Save";

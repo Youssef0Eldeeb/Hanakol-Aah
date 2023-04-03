@@ -31,5 +31,16 @@ class ForgetPassViewController: UIViewController {
         emailTextField.placeholder = NSLocalizedString("forgetPassEmail", comment: "")
         SendBtn.setTitle(NSLocalizedString("forgetPassSend", comment: ""), for: .normal)
     }
-
+    
+    @IBAction func backBtn(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func sendBtn(_ sender: UIButton) {
+        let controller = VerfiyPassViewController.instantiateVC(name: .Registration)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .coverVertical
+        present(controller, animated: true)
+    }
+    
 }

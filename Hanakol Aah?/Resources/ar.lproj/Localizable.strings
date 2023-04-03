@@ -44,3 +44,11 @@
 "verfiyWasntSend" = "لم يتم الإرسال؟";
 "verfiyResend" = "إعادة إرسال";
 "verfiy" = "تحقق";
+
+//Create New Password Screen
+
+"createPassTitle" = "انشاء رقم سري جديد";
+"createPassPass" = "الرقم السري";
+"createPassConfirmPass" = "تأكيد الرقم السري";
+"createPassSave" = "حفظ";
+

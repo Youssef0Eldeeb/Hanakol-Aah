@@ -34,5 +34,15 @@ class VerfiyPassViewController: UIViewController {
         verfiyBtn.setTitle(NSLocalizedString("verfiy", comment: ""), for: .normal)
         
     }
-
+    
+    @IBAction func backBtn(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    @IBAction func verfiyBtn(_ sender: UIButton) {
+        let controller = CreateNewPassViewController.instantiateVC(name: .Registration)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .coverVertical
+        present(controller, animated: true)
+    }
+    
 }

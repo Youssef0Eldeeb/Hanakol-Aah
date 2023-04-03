@@ -71,6 +71,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.confirmPassContainer.isHidden = true
             cell.passForgetContianer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
+            cell.areForgetPassBtn.addTarget(self, action: #selector(goToForgetPassScreen(_:)), for: .touchUpInside)
         }
         return cell
     }
@@ -95,6 +96,12 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
         registrationCollectionVeiw.isPagingEnabled = true
         registrationCollectionVeiw.reloadData()
+    }
+    @objc func goToForgetPassScreen(_ sender: UIButton){
+        let controller = ForgetPassViewController.instantiateVC(name: .Registration)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .coverVertical
+        present(controller, animated: true)
     }
     
     

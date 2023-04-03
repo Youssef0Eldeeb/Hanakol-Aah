@@ -58,6 +58,10 @@ class OnboardingViewController: UIViewController {
         descriptionLabel.text = slides[currentPage].description
     }
     @IBAction func startBtn(_ sender: UIButton) {
+        let controller = RegistrationViewController.instantiateVC(name: .Registration)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
+        present(controller, animated: true)
     }
     
     
