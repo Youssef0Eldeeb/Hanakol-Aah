@@ -21,5 +21,6 @@ extension UIViewController{
     enum StoryboardEnum: String{
         case Onboarding
         case Registration
+        case Profile
     }
 }

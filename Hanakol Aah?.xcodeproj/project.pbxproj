@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A15D5AF129D9C77C00959EEF /* StraightLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF029D9C77C00959EEF /* StraightLineView.swift */; };
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
 		A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */; };
@@ -25,6 +24,9 @@
 		A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224F629D714C500F07104 /* Onboarding.storyboard */; };
 		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 		A192250D29D8F94200F07104 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192250C29D8F94200F07104 /* Registration.storyboard */; };
+		A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921429DD9C3500349299 /* Profile.storyboard */; };
+		A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921629DD9CD400349299 /* ProfileViewController.swift */; };
+		A1EA921929DDA83E00349299 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921829DDA83E00349299 /* CardView.swift */; };
 		A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */; };
 		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
 		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
@@ -32,7 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A15D5AF029D9C77C00959EEF /* StraightLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightLineView.swift; sourceTree = "<group>"; };
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPassViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		A19224FC29D7150600F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A192250C29D8F94200F07104 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		A1EA921429DD9C3500349299 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A1EA921629DD9CD400349299 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A1EA921829DDA83E00349299 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1EA921329DD9B5600349299 /* Profile */,
 				A19224B829D5B96000F07104 /* LaunchScreen.storyboard */,
 				A19224FF29D72B5C00F07104 /* Registration */,
 				A19224CE29D5BAEC00F07104 /* Onboarding */,
@@ -178,6 +183,15 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		A1EA921329DD9B5600349299 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A1EA921429DD9C3500349299 /* Profile.storyboard */,
+				A1EA921629DD9CD400349299 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */,
-				A15D5AF029D9C77C00959EEF /* StraightLineView.swift */,
+				A1EA921829DDA83E00349299 /* CardView.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -257,6 +271,7 @@
 			files = (
 				A19224FB29D7150600F07104 /* Localizable.strings in Resources */,
 				A192250D29D8F94200F07104 /* Registration.storyboard in Resources */,
+				A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -278,6 +293,7 @@
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
+				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
@@ -285,7 +301,7 @@
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
-				A15D5AF129D9C77C00959EEF /* StraightLineView.swift in Sources */,
+				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
