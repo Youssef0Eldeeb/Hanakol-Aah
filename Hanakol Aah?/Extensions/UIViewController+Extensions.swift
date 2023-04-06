@@ -22,5 +22,6 @@ extension UIViewController{
         case Onboarding
         case Registration
         case Profile
+        case Home
     }
 }

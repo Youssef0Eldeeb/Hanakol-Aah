@@ -27,6 +27,9 @@
 		A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921429DD9C3500349299 /* Profile.storyboard */; };
 		A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921629DD9CD400349299 /* ProfileViewController.swift */; };
 		A1EA921929DDA83E00349299 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921829DDA83E00349299 /* CardView.swift */; };
+		A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921D29DEF49B00349299 /* Home.storyboard */; };
+		A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921F29DEF4F900349299 /* CustomTabBar.swift */; };
+		A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA922129DEF8F700349299 /* CustomTabBarController.swift */; };
 		A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */; };
 		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
 		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
@@ -57,6 +60,9 @@
 		A1EA921429DD9C3500349299 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		A1EA921629DD9CD400349299 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A1EA921829DDA83E00349299 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A1EA921D29DEF49B00349299 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A1EA921F29DEF4F900349299 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		A1EA922129DEF8F700349299 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1EA921C29DEF48100349299 /* Home */,
 				A1EA921329DD9B5600349299 /* Profile */,
 				A19224B829D5B96000F07104 /* LaunchScreen.storyboard */,
 				A19224FF29D72B5C00F07104 /* Registration */,
@@ -192,6 +199,23 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		A1EA921C29DEF48100349299 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1EA921D29DEF49B00349299 /* Home.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A1EA922329DEF8FC00349299 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A1EA921F29DEF4F900349299 /* CustomTabBar.swift */,
+				A1EA922129DEF8F700349299 /* CustomTabBarController.swift */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
 		A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +228,7 @@
 		A1EBC8FA29D9979900AA5C93 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				A1EA922329DEF8FC00349299 /* TabBar */,
 				A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */,
 				A1EA921829DDA83E00349299 /* CardView.swift */,
 			);
@@ -272,6 +297,7 @@
 				A19224FB29D7150600F07104 /* Localizable.strings in Resources */,
 				A192250D29D8F94200F07104 /* Registration.storyboard in Resources */,
 				A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */,
+				A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -295,6 +321,8 @@
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
+				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
+				A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,

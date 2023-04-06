@@ -18,7 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
 //        let controller = OnboardingViewController.instantiateVC(name: .Onboarding)
-        let controller = ProfileViewController.instantiateVC(name: .Profile)
+//        let controller = ProfileViewController.instantiateVC(name: .Profile)
+        let controller = CustomTabBarController.instantiateVC(name: .Home)
+        
         window?.rootViewController = controller
         window?.makeKeyAndVisible()
         
