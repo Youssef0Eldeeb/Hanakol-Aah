@@ -16,9 +16,7 @@ class CustomTabBar: UITabBar {
         let middleButton = GradientColorBtn()
         
         middleButton.frame.size = CGSize(width: 70, height: 70)
-        
-        let image = UIImage(named: "HomeTabBar")!
-        middleButton.setImage(image, for: .normal)
+        middleButton.setImage(UIImage(named: "HomeTabBar")!, for: .normal)
         middleButton.layer.cornerRadius = middleButton.frame.width / 2
         middleButton.contentMode = .scaleAspectFill
         

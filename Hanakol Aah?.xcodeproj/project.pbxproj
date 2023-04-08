@@ -30,6 +30,7 @@
 		A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921D29DEF49B00349299 /* Home.storyboard */; };
 		A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921F29DEF4F900349299 /* CustomTabBar.swift */; };
 		A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA922129DEF8F700349299 /* CustomTabBarController.swift */; };
+		A1EA922729DF729900349299 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA922629DF729900349299 /* HomeViewController.swift */; };
 		A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */; };
 		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
 		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
@@ -63,6 +64,7 @@
 		A1EA921D29DEF49B00349299 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A1EA921F29DEF4F900349299 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		A1EA922129DEF8F700349299 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		A1EA922629DF729900349299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A1EA921D29DEF49B00349299 /* Home.storyboard */,
+				A1EA922629DF729900349299 /* HomeViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
+				A1EA922729DF729900349299 /* HomeViewController.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
