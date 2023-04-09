@@ -10,6 +10,11 @@
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
 		A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */; };
+		A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E3D29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift */; };
+		A1781E4029E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E3E29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib */; };
+		A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E4229E2E7730098AB31 /* HomeMealsTableViewCell.swift */; };
+		A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E4329E2E7730098AB31 /* HomeMealsTableViewCell.xib */; };
+		A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPassViewController.swift; sourceTree = "<group>"; };
+		A1781E3D29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMealsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1781E3E29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMealsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1781E4229E2E7730098AB31 /* HomeMealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMealsTableViewCell.swift; sourceTree = "<group>"; };
+		A1781E4329E2E7730098AB31 /* HomeMealsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMealsTableViewCell.xib; sourceTree = "<group>"; };
+		A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E3D29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift */,
+				A1781E3E29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib */,
+			);
+			path = HomeMealsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A1781E4129E2E74E0098AB31 /* HomeMealsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E4229E2E7730098AB31 /* HomeMealsTableViewCell.swift */,
+				A1781E4329E2E7730098AB31 /* HomeMealsTableViewCell.xib */,
+			);
+			path = HomeMealsTableViewCell;
+			sourceTree = "<group>";
+		};
 		A19224A129D5B95700F07104 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +167,7 @@
 				A19224DB29D5C39600F07104 /* UIViewController+Extensions.swift */,
 				A19224DD29D5C3B100F07104 /* UICollectionView+Extension.swift */,
 				A19224DF29D5C3C400F07104 /* UIView+Extension.swift */,
+				A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,9 +193,11 @@
 		A19224D529D5C2B400F07104 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				A1EBC8FA29D9979900AA5C93 /* CustomComponents */,
+				A1781E4129E2E74E0098AB31 /* HomeMealsTableViewCell */,
+				A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */,
 				A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */,
 				A19224D629D5C2C000F07104 /* OnboardingCollectionViewCell */,
+				A1EBC8FA29D9979900AA5C93 /* CustomComponents */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -303,9 +334,11 @@
 				A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
+				A1781E4029E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
 				A19224B729D5B96000F07104 /* Assets.xcassets in Resources */,
 				A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */,
+				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */,
 				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A1EA922729DF729900349299 /* HomeViewController.swift in Sources */,
@@ -326,6 +360,7 @@
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
+				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,
 				A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
@@ -334,6 +369,7 @@
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
+				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,
 				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

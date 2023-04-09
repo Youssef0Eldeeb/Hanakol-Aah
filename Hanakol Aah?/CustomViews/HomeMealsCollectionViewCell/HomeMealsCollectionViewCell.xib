@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeMealsCollectionViewCell" customModule="Hanakol_Aah_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="493"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="493"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiQ-Co-15j">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="493"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enc-zT-SzI">
+                                <rect key="frame" x="0.0" y="0.0" width="371" height="493"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Enc-zT-SzI" firstAttribute="leading" secondItem="UiQ-Co-15j" secondAttribute="leading" id="S5U-VG-E3K"/>
+                            <constraint firstAttribute="trailing" secondItem="Enc-zT-SzI" secondAttribute="trailing" id="VAZ-Ft-VLK"/>
+                            <constraint firstAttribute="bottom" secondItem="Enc-zT-SzI" secondAttribute="bottom" id="wxS-RV-kh6"/>
+                            <constraint firstItem="Enc-zT-SzI" firstAttribute="top" secondItem="UiQ-Co-15j" secondAttribute="top" id="z62-uo-vNk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UiQ-Co-15j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0sO-VX-lvu"/>
+                <constraint firstAttribute="trailing" secondItem="UiQ-Co-15j" secondAttribute="trailing" id="Ho0-wA-hWY"/>
+                <constraint firstAttribute="bottom" secondItem="UiQ-Co-15j" secondAttribute="bottom" id="MVz-FZ-pLF"/>
+                <constraint firstItem="UiQ-Co-15j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="y1f-6v-UJh"/>
+            </constraints>
+            <size key="customSize" width="371" height="493"/>
+            <connections>
+                <outlet property="tableView" destination="Enc-zT-SzI" id="gNU-YK-1Cd"/>
+            </connections>
+            <point key="canvasLocation" x="-208.3969465648855" y="1.7605633802816902"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
