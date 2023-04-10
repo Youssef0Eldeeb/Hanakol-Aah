@@ -15,6 +15,12 @@
 		A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E4229E2E7730098AB31 /* HomeMealsTableViewCell.swift */; };
 		A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E4329E2E7730098AB31 /* HomeMealsTableViewCell.xib */; };
 		A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */; };
+		A1781E4A29E386480098AB31 /* Fridge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1781E4929E386480098AB31 /* Fridge.storyboard */; };
+		A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E4B29E3865C0098AB31 /* FridgeViewController.swift */; };
+		A1781E5229E38D730098AB31 /* FridgeItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E5029E38D730098AB31 /* FridgeItemsCollectionViewCell.swift */; };
+		A1781E5329E38D730098AB31 /* FridgeItemsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */; };
+		A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E5929E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift */; };
+		A1781E5C29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E5A29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -51,6 +57,12 @@
 		A1781E4229E2E7730098AB31 /* HomeMealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMealsTableViewCell.swift; sourceTree = "<group>"; };
 		A1781E4329E2E7730098AB31 /* HomeMealsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMealsTableViewCell.xib; sourceTree = "<group>"; };
 		A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A1781E4929E386480098AB31 /* Fridge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fridge.storyboard; sourceTree = "<group>"; };
+		A1781E4B29E3865C0098AB31 /* FridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
+		A1781E5029E38D730098AB31 /* FridgeItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FridgeItemsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1781E5929E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemsVerticalCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1781E5A29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FridgeItemsVerticalCollectionViewCell.xib; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +122,51 @@
 			path = HomeMealsTableViewCell;
 			sourceTree = "<group>";
 		};
+		A1781E4829E3860E0098AB31 /* Fridge */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E4929E386480098AB31 /* Fridge.storyboard */,
+				A1781E4B29E3865C0098AB31 /* FridgeViewController.swift */,
+			);
+			path = Fridge;
+			sourceTree = "<group>";
+		};
+		A1781E4D29E38C740098AB31 /* HomeViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E4129E2E74E0098AB31 /* HomeMealsTableViewCell */,
+				A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */,
+			);
+			path = HomeViewCells;
+			sourceTree = "<group>";
+		};
+		A1781E4E29E38C8B0098AB31 /* FridgeViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E5829E38E300098AB31 /* FridgeItemsVerticalCollectionViewCell */,
+				A1781E4F29E38D440098AB31 /* FridgeItemsCollectionViewCell */,
+			);
+			path = FridgeViewCells;
+			sourceTree = "<group>";
+		};
+		A1781E4F29E38D440098AB31 /* FridgeItemsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E5029E38D730098AB31 /* FridgeItemsCollectionViewCell.swift */,
+				A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */,
+			);
+			path = FridgeItemsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A1781E5829E38E300098AB31 /* FridgeItemsVerticalCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1781E5929E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift */,
+				A1781E5A29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib */,
+			);
+			path = FridgeItemsVerticalCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		A19224A129D5B95700F07104 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +201,7 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1781E4829E3860E0098AB31 /* Fridge */,
 				A1EA921C29DEF48100349299 /* Home */,
 				A1EA921329DD9B5600349299 /* Profile */,
 				A19224B829D5B96000F07104 /* LaunchScreen.storyboard */,
@@ -193,8 +251,8 @@
 		A19224D529D5C2B400F07104 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				A1781E4129E2E74E0098AB31 /* HomeMealsTableViewCell */,
-				A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */,
+				A1781E4E29E38C8B0098AB31 /* FridgeViewCells */,
+				A1781E4D29E38C740098AB31 /* HomeViewCells */,
 				A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */,
 				A19224D629D5C2C000F07104 /* OnboardingCollectionViewCell */,
 				A1EBC8FA29D9979900AA5C93 /* CustomComponents */,
@@ -330,13 +388,16 @@
 			files = (
 				A19224FB29D7150600F07104 /* Localizable.strings in Resources */,
 				A192250D29D8F94200F07104 /* Registration.storyboard in Resources */,
+				A1781E5C29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib in Resources */,
 				A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */,
 				A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */,
+				A1781E5329E38D730098AB31 /* FridgeItemsCollectionViewCell.xib in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A1781E4029E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
 				A19224B729D5B96000F07104 /* Assets.xcassets in Resources */,
+				A1781E4A29E386480098AB31 /* Fridge.storyboard in Resources */,
 				A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */,
 				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
 			);
@@ -357,8 +418,11 @@
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
+				A1781E5229E38D730098AB31 /* FridgeItemsCollectionViewCell.swift in Sources */,
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
+				A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */,
+				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
 				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,
 				A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */,

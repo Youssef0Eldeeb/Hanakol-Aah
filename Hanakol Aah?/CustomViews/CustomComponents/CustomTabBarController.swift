@@ -19,7 +19,7 @@ class CustomTabBarController: UITabBarController {
         delegate = self
         
         // Instantiate view controllers
-        let vc0 = RegistrationViewController.instantiateVC(name: .Registration)
+        let vc0 = FridgeViewController.instantiateVC(name: .Fridge)
         let vc1 = ProfileViewController.instantiateVC(name: .Profile)
         let vc2 = HomeViewController.instantiateVC(name: .Home)
         let vc3 = VerfiyPassViewController.instantiateVC(name: .Registration)

@@ -23,5 +23,6 @@ extension UIViewController{
         case Registration
         case Profile
         case Home
+        case Fridge
     }
 }
