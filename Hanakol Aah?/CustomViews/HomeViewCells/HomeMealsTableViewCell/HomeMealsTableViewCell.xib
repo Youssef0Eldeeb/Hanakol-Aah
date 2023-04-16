@@ -158,7 +158,7 @@
                 </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="18.320610687022899" y="5.9859154929577469"/>
+            <point key="canvasLocation" x="95" y="-17"/>
         </tableViewCell>
     </objects>
     <resources>

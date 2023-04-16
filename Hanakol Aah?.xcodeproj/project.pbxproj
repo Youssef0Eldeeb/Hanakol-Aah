@@ -21,6 +21,10 @@
 		A1781E5329E38D730098AB31 /* FridgeItemsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */; };
 		A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1781E5929E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift */; };
 		A1781E5C29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1781E5A29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib */; };
+		A17AB41529EC311800D6E5EC /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AB41329EC311800D6E5EC /* ScheduleCollectionViewCell.swift */; };
+		A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17AB41429EC311800D6E5EC /* ScheduleCollectionViewCell.xib */; };
+		A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AB41729EC314C00D6E5EC /* ScheduleTableViewCell.swift */; };
+		A17AB41A29EC314C00D6E5EC /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -35,6 +39,8 @@
 		A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224F629D714C500F07104 /* Onboarding.storyboard */; };
 		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 		A192250D29D8F94200F07104 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192250C29D8F94200F07104 /* Registration.storyboard */; };
+		A1E94DA829EC1E6B00DF114E /* ScheduleRecipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */; };
+		A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */; };
 		A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921429DD9C3500349299 /* Profile.storyboard */; };
 		A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921629DD9CD400349299 /* ProfileViewController.swift */; };
 		A1EA921929DDA83E00349299 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA921829DDA83E00349299 /* CardView.swift */; };
@@ -63,6 +69,10 @@
 		A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FridgeItemsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1781E5929E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemsVerticalCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1781E5A29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FridgeItemsVerticalCollectionViewCell.xib; sourceTree = "<group>"; };
+		A17AB41329EC311800D6E5EC /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A17AB41429EC311800D6E5EC /* ScheduleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCollectionViewCell.xib; sourceTree = "<group>"; };
+		A17AB41729EC314C00D6E5EC /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +90,8 @@
 		A19224FC29D7150600F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A192250C29D8F94200F07104 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleRecipes.storyboard; sourceTree = "<group>"; };
+		A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRecipesViewController.swift; sourceTree = "<group>"; };
 		A1EA921429DD9C3500349299 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		A1EA921629DD9CD400349299 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A1EA921829DDA83E00349299 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -167,6 +179,15 @@
 			path = FridgeItemsVerticalCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		A17AB40E29EC301600D6E5EC /* ScheduleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A17AB41729EC314C00D6E5EC /* ScheduleTableViewCell.swift */,
+				A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */,
+			);
+			path = ScheduleTableViewCell;
+			sourceTree = "<group>";
+		};
 		A19224A129D5B95700F07104 = {
 			isa = PBXGroup;
 			children = (
@@ -201,12 +222,13 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1E94DA629EC1DA100DF114E /* ScheduleRecipes */,
 				A1781E4829E3860E0098AB31 /* Fridge */,
 				A1EA921C29DEF48100349299 /* Home */,
 				A1EA921329DD9B5600349299 /* Profile */,
-				A19224B829D5B96000F07104 /* LaunchScreen.storyboard */,
 				A19224FF29D72B5C00F07104 /* Registration */,
 				A19224CE29D5BAEC00F07104 /* Onboarding */,
+				A19224B829D5B96000F07104 /* LaunchScreen.storyboard */,
 			);
 			path = Scences;
 			sourceTree = "<group>";
@@ -251,6 +273,7 @@
 		A19224D529D5C2B400F07104 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A1E94DAB29EC282500DF114E /* ScheduleRecipesViewCell */,
 				A1781E4E29E38C8B0098AB31 /* FridgeViewCells */,
 				A1781E4D29E38C740098AB31 /* HomeViewCells */,
 				A1EBC8F529D995B500AA5C93 /* RegistrationCollectionViewCell */,
@@ -279,6 +302,33 @@
 				A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		A1E94DA629EC1DA100DF114E /* ScheduleRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */,
+				A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */,
+			);
+			path = ScheduleRecipes;
+			sourceTree = "<group>";
+		};
+		A1E94DAB29EC282500DF114E /* ScheduleRecipesViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A17AB40E29EC301600D6E5EC /* ScheduleTableViewCell */,
+				A1E94DB029EC2DD100DF114E /* ScheduleCollectionViewCell */,
+			);
+			path = ScheduleRecipesViewCell;
+			sourceTree = "<group>";
+		};
+		A1E94DB029EC2DD100DF114E /* ScheduleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A17AB41329EC311800D6E5EC /* ScheduleCollectionViewCell.swift */,
+				A17AB41429EC311800D6E5EC /* ScheduleCollectionViewCell.xib */,
+			);
+			path = ScheduleCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		A1EA921329DD9B5600349299 /* Profile */ = {
@@ -393,12 +443,15 @@
 				A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */,
 				A1781E5329E38D730098AB31 /* FridgeItemsCollectionViewCell.xib in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
+				A17AB41A29EC314C00D6E5EC /* ScheduleTableViewCell.xib in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A1781E4029E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
 				A19224B729D5B96000F07104 /* Assets.xcassets in Resources */,
 				A1781E4A29E386480098AB31 /* Fridge.storyboard in Resources */,
 				A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */,
+				A1E94DA829EC1E6B00DF114E /* ScheduleRecipes.storyboard in Resources */,
+				A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */,
 				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,12 +478,15 @@
 				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
 				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,
+				A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */,
 				A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
+				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,
+				A17AB41529EC311800D6E5EC /* ScheduleCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,

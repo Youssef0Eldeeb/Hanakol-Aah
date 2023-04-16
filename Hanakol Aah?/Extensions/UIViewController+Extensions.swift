@@ -24,5 +24,6 @@ extension UIViewController{
         case Profile
         case Home
         case Fridge
+        case ScheduleRecipes
     }
 }
