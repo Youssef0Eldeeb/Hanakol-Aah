@@ -32,29 +32,34 @@ class FridgeViewController: UIViewController {
             button.cornerRedius = 19
             button.setTitleColor(UIColor(named: "MiddleOrange"), for: .normal)
         }
-        foodItemsBtns[0].setTitle("Dinner", for: .normal)
-        foodItemsBtns[1].setTitle("Lunch", for: .normal)
-        foodItemsBtns[2].setTitle("Breakfast", for: .normal)
+        foodItemsBtns[0].setTitle("Vegetables", for: .normal)
+        foodItemsBtns[1].setTitle("Meats", for: .normal)
+        foodItemsBtns[2].setTitle("Grains", for: .normal)
         foodItemsBtns[0].addTarget(self, action: #selector(vegetablesBtn(_:)), for: .touchUpInside)
         foodItemsBtns[1].addTarget(self, action: #selector(meatBtn(_:)), for: .touchUpInside)
-        foodItemsBtns[2].addTarget(self, action: #selector(MacaroniBtn(_:)), for: .touchUpInside)
+        foodItemsBtns[2].addTarget(self, action: #selector(GrainsBtn(_:)), for: .touchUpInside)
         
     }
     @objc func vegetablesBtn(_ sender: UIButton){
         changePressed(sender: sender)
-//        let indexPath = IndexPath(item: 2, section: 0)
-//        MealsCollectionView.isPagingEnabled = false
-//        MealsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-//        MealsCollectionView.isPagingEnabled = true
+        let indexPath = IndexPath(item: 0, section: 0)
+        horizontalCollectionView.isPagingEnabled = false
+        horizontalCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        horizontalCollectionView.isPagingEnabled = true
     }
     @objc func meatBtn(_ sender: UIButton){
         changePressed(sender: sender)
-        
-        
+        let indexPath = IndexPath(item: 1, section: 0)
+        horizontalCollectionView.isPagingEnabled = false
+        horizontalCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        horizontalCollectionView.isPagingEnabled = true
     }
-    @objc func MacaroniBtn(_ sender: UIButton){
+    @objc func GrainsBtn(_ sender: UIButton){
         changePressed(sender: sender)
-        
+        let indexPath = IndexPath(item: 2, section: 0)
+        horizontalCollectionView.isPagingEnabled = false
+        horizontalCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        horizontalCollectionView.isPagingEnabled = true
     }
     func changePressed(sender: UIButton){
         for button in foodItemsBtns{

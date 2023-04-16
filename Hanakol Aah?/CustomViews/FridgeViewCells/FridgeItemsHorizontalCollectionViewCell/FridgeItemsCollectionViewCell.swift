@@ -17,6 +17,7 @@ class FridgeItemsCollectionViewCell: UICollectionViewCell {
         verticalCollectionView.registerNib(cell: FridgeItemsVerticalCollectionViewCell.self)
         verticalCollectionView.dataSource = self
         verticalCollectionView.delegate = self
+        setupCompositionLayout()
     }
 
 }
@@ -34,6 +35,18 @@ extension FridgeItemsCollectionViewCell: UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: verticalCollectionView.frame.width / 2 - 10, height: verticalCollectionView.frame.width / 2 - 10)
+    }
+    
+    func setupCompositionLayout(){
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1),
+            heightDimension: .fractionalHeight(1)))
+        let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1),
+            heightDimension: .fractionalHeight(0.35)), subitem: item, count: 2)
+        let section = NSCollectionLayoutSection(group: horizontalGroup)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        verticalCollectionView.collectionViewLayout = layout
     }
     
 }

@@ -144,18 +144,18 @@
 			isa = PBXGroup;
 			children = (
 				A1781E5829E38E300098AB31 /* FridgeItemsVerticalCollectionViewCell */,
-				A1781E4F29E38D440098AB31 /* FridgeItemsCollectionViewCell */,
+				A1781E4F29E38D440098AB31 /* FridgeItemsHorizontalCollectionViewCell */,
 			);
 			path = FridgeViewCells;
 			sourceTree = "<group>";
 		};
-		A1781E4F29E38D440098AB31 /* FridgeItemsCollectionViewCell */ = {
+		A1781E4F29E38D440098AB31 /* FridgeItemsHorizontalCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				A1781E5029E38D730098AB31 /* FridgeItemsCollectionViewCell.swift */,
 				A1781E5129E38D730098AB31 /* FridgeItemsCollectionViewCell.xib */,
 			);
-			path = FridgeItemsCollectionViewCell;
+			path = FridgeItemsHorizontalCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		A1781E5829E38E300098AB31 /* FridgeItemsVerticalCollectionViewCell */ = {
