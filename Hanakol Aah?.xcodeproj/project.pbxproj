@@ -25,6 +25,8 @@
 		A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17AB41429EC311800D6E5EC /* ScheduleCollectionViewCell.xib */; };
 		A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AB41729EC314C00D6E5EC /* ScheduleTableViewCell.swift */; };
 		A17AB41A29EC314C00D6E5EC /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */; };
+		A1813E4329ED77A3008964D1 /* MealScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1813E4229ED77A2008964D1 /* MealScan.storyboard */; };
+		A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1813E4429ED77B9008964D1 /* MealScanViewController.swift */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -73,6 +75,8 @@
 		A17AB41429EC311800D6E5EC /* ScheduleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCollectionViewCell.xib; sourceTree = "<group>"; };
 		A17AB41729EC314C00D6E5EC /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		A1813E4229ED77A2008964D1 /* MealScan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MealScan.storyboard; sourceTree = "<group>"; };
+		A1813E4429ED77B9008964D1 /* MealScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScanViewController.swift; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +192,15 @@
 			path = ScheduleTableViewCell;
 			sourceTree = "<group>";
 		};
+		A1813E4129ED775C008964D1 /* MealScan */ = {
+			isa = PBXGroup;
+			children = (
+				A1813E4229ED77A2008964D1 /* MealScan.storyboard */,
+				A1813E4429ED77B9008964D1 /* MealScanViewController.swift */,
+			);
+			path = MealScan;
+			sourceTree = "<group>";
+		};
 		A19224A129D5B95700F07104 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1813E4129ED775C008964D1 /* MealScan */,
 				A1E94DA629EC1DA100DF114E /* ScheduleRecipes */,
 				A1781E4829E3860E0098AB31 /* Fridge */,
 				A1EA921C29DEF48100349299 /* Home */,
@@ -438,6 +452,7 @@
 			files = (
 				A19224FB29D7150600F07104 /* Localizable.strings in Resources */,
 				A192250D29D8F94200F07104 /* Registration.storyboard in Resources */,
+				A1813E4329ED77A3008964D1 /* MealScan.storyboard in Resources */,
 				A1781E5C29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.xib in Resources */,
 				A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */,
 				A1EA921E29DEF49B00349299 /* Home.storyboard in Resources */,
@@ -482,6 +497,7 @@
 				A1EA922029DEF4F900349299 /* CustomTabBar.swift in Sources */,
 				A1EBC8F429D9070B00AA5C93 /* RegistrationViewController.swift in Sources */,
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
+				A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,

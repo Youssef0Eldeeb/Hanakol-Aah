@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meal Scan View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MealScanViewController" id="Y6W-OH-hqX" customClass="MealScanViewController" customModule="Hanakol_Aah_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msT-cn-O3t">
+                                <rect key="frame" x="86.666666666666686" y="316" width="220" height="220"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mealScan" translatesAutoresizingMaskIntoConstraints="NO" id="zUV-zz-l6r">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVL-P9-1ah">
+                                        <rect key="frame" x="-20" y="120" width="260" height="1.6666666666666714"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1.5" id="450-RT-FTb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="AVL-P9-1ah" firstAttribute="top" secondItem="msT-cn-O3t" secondAttribute="top" constant="120" id="0Wy-9j-LXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="AVL-P9-1ah" secondAttribute="trailing" constant="-20" id="E7g-9N-qOr"/>
+                                    <constraint firstItem="zUV-zz-l6r" firstAttribute="leading" secondItem="msT-cn-O3t" secondAttribute="leading" id="IYF-Rm-k7g"/>
+                                    <constraint firstAttribute="height" constant="220" id="K04-gb-QWv"/>
+                                    <constraint firstAttribute="bottom" secondItem="zUV-zz-l6r" secondAttribute="bottom" id="WLG-dm-8Bv"/>
+                                    <constraint firstItem="AVL-P9-1ah" firstAttribute="leading" secondItem="msT-cn-O3t" secondAttribute="leading" constant="-20" id="gBR-jh-hqB"/>
+                                    <constraint firstAttribute="width" constant="220" id="nWm-tQ-pfL"/>
+                                    <constraint firstAttribute="trailing" secondItem="zUV-zz-l6r" secondAttribute="trailing" id="pEQ-d9-XO2"/>
+                                    <constraint firstItem="zUV-zz-l6r" firstAttribute="top" secondItem="msT-cn-O3t" secondAttribute="top" id="po1-0a-Gml"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I47-Ax-MB5" customClass="GradientColorBtn" customModule="Hanakol_Aah_" customModuleProvider="target">
+                                <rect key="frame" x="121.66666666666669" y="561" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AKW-9g-LJc"/>
+                                    <constraint firstAttribute="width" constant="150" id="hK4-yR-gXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Scan your meal">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I47-Ax-MB5" firstAttribute="top" secondItem="msT-cn-O3t" secondAttribute="bottom" constant="25" id="TNc-PN-4av"/>
+                            <constraint firstItem="msT-cn-O3t" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ds1-n0-IRH"/>
+                            <constraint firstItem="I47-Ax-MB5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qQZ-MG-Ij5"/>
+                            <constraint firstItem="msT-cn-O3t" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wfI-k3-5da"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scanView" destination="msT-cn-O3t" id="FKt-8E-LVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="-42.253521126760567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mealScan" width="356" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

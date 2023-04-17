@@ -26,6 +26,14 @@ class RegistrationViewController: UIViewController {
         registrationCollectionVeiw.dataSource = self
         initUI()
     }
+    
+    @IBAction func registerBtnPressed(_ sender: UIButton) {
+        let vc = CustomTabBarController.instantiateVC(name: .Home)
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
+    }
     func initUI(){
         registrationCollectionVeiw.registerNib(cell: RegistrationCollectionViewCell.self)
         registerOptionsBtnUI()

@@ -22,7 +22,7 @@ class CustomTabBarController: UITabBarController {
         let vc0 = FridgeViewController.instantiateVC(name: .Fridge)
         let vc1 = ScheduleRecipesViewController.instantiateVC(name: .ScheduleRecipes)
         let vc2 = HomeViewController.instantiateVC(name: .Home)
-        let vc3 = VerfiyPassViewController.instantiateVC(name: .Registration)
+        let vc3 = MealScanViewController.instantiateVC(name: .MealScan)
         let vc4 = CreateNewPassViewController.instantiateVC(name: .Registration)
         
         // Create TabBar items
