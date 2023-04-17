@@ -26,6 +26,7 @@ extension UIViewController{
         case Fridge
         case ScheduleRecipes
         case MealScan
+        case Tips
         
     }
 }

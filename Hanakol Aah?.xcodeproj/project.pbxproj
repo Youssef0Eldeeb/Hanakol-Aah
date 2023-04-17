@@ -27,6 +27,10 @@
 		A17AB41A29EC314C00D6E5EC /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */; };
 		A1813E4329ED77A3008964D1 /* MealScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1813E4229ED77A2008964D1 /* MealScan.storyboard */; };
 		A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1813E4429ED77B9008964D1 /* MealScanViewController.swift */; };
+		A1813E4829ED7CC2008964D1 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1813E4729ED7CC2008964D1 /* Tips.storyboard */; };
+		A1813E4A29ED7CD6008964D1 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1813E4929ED7CD6008964D1 /* TipsViewController.swift */; };
+		A1813E5229ED7FC3008964D1 /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1813E5029ED7FC3008964D1 /* TipsTableViewCell.swift */; };
+		A1813E5329ED7FC3008964D1 /* TipsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1813E5129ED7FC3008964D1 /* TipsTableViewCell.xib */; };
 		A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AD29D5B95700F07104 /* AppDelegate.swift */; };
 		A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19224AF29D5B95700F07104 /* SceneDelegate.swift */; };
 		A19224B729D5B96000F07104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19224B629D5B96000F07104 /* Assets.xcassets */; };
@@ -77,6 +81,10 @@
 		A17AB41829EC314C00D6E5EC /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		A1813E4229ED77A2008964D1 /* MealScan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MealScan.storyboard; sourceTree = "<group>"; };
 		A1813E4429ED77B9008964D1 /* MealScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScanViewController.swift; sourceTree = "<group>"; };
+		A1813E4729ED7CC2008964D1 /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		A1813E4929ED7CD6008964D1 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		A1813E5029ED7FC3008964D1 /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
+		A1813E5129ED7FC3008964D1 /* TipsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsTableViewCell.xib; sourceTree = "<group>"; };
 		A19224AA29D5B95700F07104 /* Hanakol Aah?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanakol Aah?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19224AD29D5B95700F07104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19224AF29D5B95700F07104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +209,24 @@
 			path = MealScan;
 			sourceTree = "<group>";
 		};
+		A1813E4629ED7CAB008964D1 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				A1813E4729ED7CC2008964D1 /* Tips.storyboard */,
+				A1813E4929ED7CD6008964D1 /* TipsViewController.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		A1813E4B29ED7F8A008964D1 /* TipsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1813E5029ED7FC3008964D1 /* TipsTableViewCell.swift */,
+				A1813E5129ED7FC3008964D1 /* TipsTableViewCell.xib */,
+			);
+			path = TipsTableViewCell;
+			sourceTree = "<group>";
+		};
 		A19224A129D5B95700F07104 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +261,7 @@
 		A19224C529D5BA2400F07104 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1813E4629ED7CAB008964D1 /* Tips */,
 				A1813E4129ED775C008964D1 /* MealScan */,
 				A1E94DA629EC1DA100DF114E /* ScheduleRecipes */,
 				A1781E4829E3860E0098AB31 /* Fridge */,
@@ -287,6 +314,7 @@
 		A19224D529D5C2B400F07104 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A1813E4B29ED7F8A008964D1 /* TipsTableViewCell */,
 				A1E94DAB29EC282500DF114E /* ScheduleRecipesViewCell */,
 				A1781E4E29E38C8B0098AB31 /* FridgeViewCells */,
 				A1781E4D29E38C740098AB31 /* HomeViewCells */,
@@ -459,6 +487,7 @@
 				A1781E5329E38D730098AB31 /* FridgeItemsCollectionViewCell.xib in Resources */,
 				A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */,
 				A17AB41A29EC314C00D6E5EC /* ScheduleTableViewCell.xib in Resources */,
+				A1813E5329ED7FC3008964D1 /* TipsTableViewCell.xib in Resources */,
 				A19224BA29D5B96000F07104 /* LaunchScreen.storyboard in Resources */,
 				A1781E4029E2E0CD0098AB31 /* HomeMealsCollectionViewCell.xib in Resources */,
 				A19224DA29D5C2F300F07104 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -468,6 +497,7 @@
 				A1E94DA829EC1E6B00DF114E /* ScheduleRecipes.storyboard in Resources */,
 				A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */,
 				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
+				A1813E4829ED7CC2008964D1 /* Tips.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +518,7 @@
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
 				A1781E5229E38D730098AB31 /* FridgeItemsCollectionViewCell.swift in Sources */,
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
+				A1813E5229ED7FC3008964D1 /* TipsTableViewCell.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */,
 				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
@@ -504,6 +535,7 @@
 				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,
 				A17AB41529EC311800D6E5EC /* ScheduleCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
+				A1813E4A29ED7CD6008964D1 /* TipsViewController.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,
 				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
