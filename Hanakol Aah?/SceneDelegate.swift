@@ -17,9 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-//        let controller = OnboardingViewController.instantiateVC(name: .Onboarding)
-//        let controller = ProfileViewController.instantiateVC(name: .Profile)
-        let controller = CustomTabBarController.instantiateVC(name: .Home)
+        var controller: UIViewController!
+        if UserDefaults.standard.hasOnboarded{
+            controller = RegistrationViewController.instantiateVC(name: .Registration)
+        }else{
+            controller = OnboardingViewController.instantiateVC(name: .Onboarding)
+        }
         
         window?.rootViewController = controller
         window?.makeKeyAndVisible()

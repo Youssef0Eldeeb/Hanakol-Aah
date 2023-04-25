@@ -27,13 +27,7 @@ class RegistrationViewController: UIViewController {
         initUI()
     }
     
-    @IBAction func registerBtnPressed(_ sender: UIButton) {
-        let vc = CustomTabBarController.instantiateVC(name: .Home)
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        present(vc, animated: true)
-//        navigationController?.pushViewController(vc, animated: true)
-    }
+
     func initUI(){
         registrationCollectionVeiw.registerNib(cell: RegistrationCollectionViewCell.self)
         registerOptionsBtnUI()
@@ -72,6 +66,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.userNameContainer.isHidden = false
             cell.confirmPassContainer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
+            registerBtn.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
             
         }else if indexPath.row == 1{ // login cell
 //            print("Login cell indexPath.row is \(indexPath.rfow)")
@@ -80,6 +75,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.passForgetContianer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
             cell.areForgetPassBtn.addTarget(self, action: #selector(goToForgetPassScreen(_:)), for: .touchUpInside)
+            registerBtn.addTarget(self, action: #selector(goToProfile), for: .touchUpInside)
         }
         return cell
     }
@@ -112,6 +108,28 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         present(controller, animated: true)
     }
     
+    @objc func goToProfile(_ sender: UIButton){
+        let controller = CustomTabBarController.instantiateVC(name: .Home)
+        let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .flipHorizontal
+        
+        present(controller, animated: true) {
+            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+            profilecontroller.modalPresentationStyle = .fullScreen
+            controller.present(profilecontroller, animated: true)
+        }
+
+        
+        
+    }
+    @objc func goToHome(_ sender: UIButton){
+        let controller = CustomTabBarController.instantiateVC(name: .Home)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .flipHorizontal
+        present(controller, animated: true)
+
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: registrationCollectionVeiw.frame.width, height: registrationCollectionVeiw.frame.height)

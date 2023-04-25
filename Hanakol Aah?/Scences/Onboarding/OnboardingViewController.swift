@@ -17,6 +17,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var curvedVeiw: UIView!
     
+    let currentLanguage = Locale.current.language.languageCode?.identifier
     var slides: [OnboardingSlides] = []
     var currentPage = 0 {
         didSet{
@@ -43,13 +44,19 @@ class OnboardingViewController: UIViewController {
         onboardingCollectionView.delegate = self
         onboardingCollectionView.dataSource = self
         initUI()
-        // change srolling dircation if collctionView to RTL
-//        onboardingCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+//         change srolling dircation if collctionView to RTL
+        if currentLanguage == "ar"{
+            onboardingCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+        }
+        
+        
     }
     
     @IBAction func skipBtn(_ sender: UIButton) {
         currentPage += 1
+        print(currentPage," \n")
         let indexPath = IndexPath(item: currentPage, section: 0)
+        
         onboardingCollectionView.isPagingEnabled = false
         onboardingCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         onboardingCollectionView.isPagingEnabled = true
@@ -61,6 +68,7 @@ class OnboardingViewController: UIViewController {
         let controller = RegistrationViewController.instantiateVC(name: .Registration)
         controller.modalPresentationStyle = .fullScreen
         controller.modalTransitionStyle = .crossDissolve
+        UserDefaults.standard.hasOnboarded = true
         present(controller, animated: true)
     }
     
@@ -76,7 +84,6 @@ class OnboardingViewController: UIViewController {
         curvedVeiw.cornerRedius = 20
         skipBtn.setTitle(NSLocalizedString("onboardingSkipBtn", comment: ""), for: .normal)
         startBtn.setTitle(NSLocalizedString("onboardingStartBtn", comment: ""), for: .normal)
-//        onboardingCollectionView.collectionViewLayout = RTLCollectionFlow()
     }
     
 }
@@ -88,15 +95,15 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = onboardingCollectionView.dequeue(indexPath: indexPath) as OnboardingCollectionViewCell
-//        cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-//        let currentLanguage = Locale.current.language.languageCode?.identifier
-//        if currentLanguage == "ar"{
-//
-//            cell.setImage(image: slides.reversed()[indexPath.row].image)
-//        }else{
-//            cell.setImage(image: slides[indexPath.row].image)
-//        }
-        cell.setImage(image: slides[indexPath.row].image)
+        
+        if currentLanguage == "ar"{
+            print(slides.reversed()[indexPath.row].image , "\n")
+            cell.setImage(image: slides.reversed()[indexPath.row].image)
+            cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+        }else{
+            cell.setImage(image: slides[indexPath.row].image)
+        }
+        
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -109,6 +116,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         pageControl.currentPage = currentPage
         titleLabel.text = slides[currentPage].title
         descriptionLabel.text = slides[currentPage].description
+        print(currentPage," \n")
     }
     
     

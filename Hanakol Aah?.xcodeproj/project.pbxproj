@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */; };
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
 		A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPassViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				A19224DD29D5C3B100F07104 /* UICollectionView+Extension.swift */,
 				A19224DF29D5C3C400F07104 /* UIView+Extension.swift */,
 				A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */,
+				A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				A19224E629D5C61500F07104 /* OnboardingViewController.swift in Sources */,
 				A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
+				A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,

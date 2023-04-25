@@ -32,6 +32,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var vegetarianDietCheckBtn: UIButton!
     @IBOutlet weak var ketogenicDietCheckBtn: UIButton!
     
+    @IBOutlet weak var doneBtn: UIButton!
     
     var dietType: DietType!
     
@@ -84,6 +85,9 @@ class ProfileViewController: UIViewController {
         ketogenicDietCheckBtn.layer.borderWidth = 2
         ketogenicDietCheckBtn.layer.borderColor = UIColor.orange.cgColor
         
+        
+        doneBtn.addTarget(self, action: #selector(dissmisScreen), for: .touchUpInside)
+        
         edit01Btn.addTarget(self, action: #selector(editFamilyNum(_:)), for: .touchUpInside)
         confirm01Btn.addTarget(self, action: #selector(confirmEditFamilyNum(_:)), for: .touchUpInside)
         
@@ -132,6 +136,9 @@ class ProfileViewController: UIViewController {
         case .none:
             break
         }
+    }
+    @objc func dissmisScreen(_ sender: UIButton){
+        dismiss(animated: true)
     }
 
 }

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,6 +51,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo6-ij-IWT">
+                                                                <rect key="frame" x="343" y="12" width="45" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="vyj-44-PGb"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Done">
+                                                                    <color key="titleColor" name="MiddleOrange"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -58,10 +75,12 @@
                                                             <constraint firstAttribute="height" constant="230" id="5Ju-9B-C8l"/>
                                                             <constraint firstItem="3HV-Ky-ygM" firstAttribute="leading" secondItem="9Tg-Ve-fye" secondAttribute="leading" id="AVX-Vv-uob"/>
                                                             <constraint firstAttribute="trailing" secondItem="3HV-Ky-ygM" secondAttribute="trailing" id="BVx-ac-HzN"/>
+                                                            <constraint firstItem="qo6-ij-IWT" firstAttribute="centerY" secondItem="PAJ-Dm-kmz" secondAttribute="centerY" id="JMc-VA-nnr"/>
                                                             <constraint firstItem="W7g-oZ-q1V" firstAttribute="centerX" secondItem="9Tg-Ve-fye" secondAttribute="centerX" id="Rsv-yY-WiH"/>
                                                             <constraint firstItem="PAJ-Dm-kmz" firstAttribute="centerX" secondItem="9Tg-Ve-fye" secondAttribute="centerX" id="c2j-8Y-qJV"/>
                                                             <constraint firstItem="B6w-1k-wuY" firstAttribute="centerX" secondItem="W7g-oZ-q1V" secondAttribute="centerX" id="gJI-yJ-Hy6"/>
                                                             <constraint firstItem="3HV-Ky-ygM" firstAttribute="top" secondItem="9Tg-Ve-fye" secondAttribute="top" id="lH5-fx-JLL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="qo6-ij-IWT" secondAttribute="trailing" constant="5" id="s16-k7-S9c"/>
                                                             <constraint firstItem="B6w-1k-wuY" firstAttribute="top" secondItem="W7g-oZ-q1V" secondAttribute="bottom" constant="8" id="sGO-h0-bHQ"/>
                                                             <constraint firstAttribute="bottom" secondItem="3HV-Ky-ygM" secondAttribute="bottom" constant="80" id="u4E-GC-6ai"/>
                                                         </constraints>
@@ -731,6 +750,7 @@
                         <outlet property="confirm02Btn" destination="Oky-iK-ehO" id="051-X6-2l1"/>
                         <outlet property="confirm02BtnView" destination="IR1-kR-3Jp" id="0ck-uB-8Ag"/>
                         <outlet property="confirmBtnView" destination="X1W-aq-xhB" id="wqq-cr-yeT"/>
+                        <outlet property="doneBtn" destination="qo6-ij-IWT" id="zuf-zH-VPo"/>
                         <outlet property="edit01Btn" destination="paf-zL-Mbo" id="4DT-BO-Hg7"/>
                         <outlet property="edit02Btn" destination="CcT-AX-eIM" id="MGb-DV-M2l"/>
                         <outlet property="healthyDietCheckBtn" destination="D6a-hR-piY" id="jgw-bS-aGN"/>
@@ -758,6 +778,9 @@
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="stand" width="120" height="120"/>
         <image name="vegetarian" width="85" height="80"/>
+        <namedColor name="MiddleOrange">
+            <color red="0.94900000095367432" green="0.3059999942779541" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
