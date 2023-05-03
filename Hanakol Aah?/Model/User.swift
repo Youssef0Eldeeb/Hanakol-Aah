@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct User: Codable, Equatable{
     var id: String = ""
     var pushId: String = ""
     var imageLink: String = ""
-    var name, email, status: String
+    var username, email: String
 }
 
 

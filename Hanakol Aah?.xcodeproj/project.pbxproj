@@ -63,6 +63,9 @@
 		A1F27F9F2A026DF60040D64A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */; };
 		A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */; };
 		A1F27FA52A0288F70040D64A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA42A0288F70040D64A /* User.swift */; };
+		A1F27FA72A02A2650040D64A /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA62A02A2650040D64A /* FirestoreManager.swift */; };
+		A1F27FAA2A02AC220040D64A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */; };
+		A1F27FAC2A02ADAB0040D64A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FAB2A02ADAA0040D64A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +129,9 @@
 		A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
 		A1F27FA42A0288F70040D64A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1F27FA62A02A2650040D64A /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		A1F27FAB2A02ADAA0040D64A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.debug.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -288,6 +294,7 @@
 				A19224AF29D5B95700F07104 /* SceneDelegate.swift */,
 				A19224BB29D5B96000F07104 /* Info.plist */,
 				A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */,
+				A1F27FAB2A02ADAA0040D64A /* Constants.swift */,
 			);
 			path = "Hanakol Aah?";
 			sourceTree = "<group>";
@@ -458,6 +465,7 @@
 		A1F27FA02A02868C0040D64A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A1F27FA82A02ABD70040D64A /* LocalDatabaseManager */,
 				A1F27FA12A0287290040D64A /* FirebaseManager */,
 			);
 			path = Services;
@@ -467,8 +475,17 @@
 			isa = PBXGroup;
 			children = (
 				A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */,
+				A1F27FA62A02A2650040D64A /* FirestoreManager.swift */,
 			);
 			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		A1F27FA82A02ABD70040D64A /* LocalDatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */,
+			);
+			path = LocalDatabaseManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,10 +623,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */,
+				A1F27FA72A02A2650040D64A /* FirestoreManager.swift in Sources */,
 				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
 				A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A1EA922729DF729900349299 /* HomeViewController.swift in Sources */,
+				A1F27FAA2A02AC220040D64A /* UserDefaultManager.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
@@ -638,6 +657,7 @@
 				A1813E4A29ED7CD6008964D1 /* TipsViewController.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,
+				A1F27FAC2A02ADAB0040D64A /* Constants.swift in Sources */,
 				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

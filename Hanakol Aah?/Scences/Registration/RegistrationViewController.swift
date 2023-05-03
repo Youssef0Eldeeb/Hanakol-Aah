@@ -66,7 +66,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.userNameContainer.isHidden = false
             cell.confirmPassContainer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
-            registerBtn.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
+            registerBtn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
             
         }else if indexPath.row == 1{ // login cell
 //            print("Login cell indexPath.row is \(indexPath.rfow)")
@@ -75,7 +75,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.passForgetContianer.isHidden = false
             loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
             cell.areForgetPassBtn.addTarget(self, action: #selector(goToForgetPassScreen(_:)), for: .touchUpInside)
-            registerBtn.addTarget(self, action: #selector(goToProfile), for: .touchUpInside)
+            registerBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
         }
         return cell
     }
@@ -108,27 +108,52 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         present(controller, animated: true)
     }
     
-    @objc func goToProfile(_ sender: UIButton){
-        let controller = CustomTabBarController.instantiateVC(name: .Home)
-        let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .flipHorizontal
+    @objc func signUp(_ sender: UIButton){
+        let indexPath = IndexPath(row: 0, section: 0)
+        let cell = registrationCollectionVeiw.cellForItem(at: indexPath) as! RegistrationCollectionViewCell
+        let username = cell.userNameTextField.text
+        let confirmedPass = cell.confirmPassTextField.text
+        guard let email = cell.emailTextField.text,
+              let password = cell.passwordTextField.text else {return}
+        guard password == confirmedPass else { return }
         
-        present(controller, animated: true) {
-            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
-            profilecontroller.modalPresentationStyle = .fullScreen
-            controller.present(profilecontroller, animated: true)
-        }
-
-        
+        let userAuth = UserAuth(username: username, email: email, password: password)
+        checkSignUp(userAuth)
         
     }
-    @objc func goToHome(_ sender: UIButton){
-        let controller = CustomTabBarController.instantiateVC(name: .Home)
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .flipHorizontal
-        present(controller, animated: true)
-
+    
+    private func checkSignUp(_ userAuth: UserAuth){
+        FirebaseAuthentication.shared.signUp(userAuth: userAuth) { error in
+            if let error = error{
+                print(error.localizedDescription)
+            }
+            guard error == nil else {return}
+            
+            let controller = CustomTabBarController.instantiateVC(name: .Home)
+            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+            
+            self.present(controller, animated: true) {
+                let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+                profilecontroller.modalPresentationStyle = .fullScreen
+                controller.present(profilecontroller, animated: true)
+            }
+        }
+        
+    }
+    
+    @objc func login(_ sender: UIButton){
+        let indexPath = IndexPath(row: 1, section: 0)
+        let cell = registrationCollectionVeiw.cellForItem(at: indexPath) as! RegistrationCollectionViewCell
+        guard let email = cell.emailTextField.text,
+              let password = cell.passwordTextField.text else {return}
+        
+        let userAuth = UserAuth(email: email, password: password)
+        checkLogin(userAuth)
+    }
+    private func checkLogin(_ userAuth: UserAuth){
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
