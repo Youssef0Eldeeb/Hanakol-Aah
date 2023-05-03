@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C00550CFB26314C7B2546EF /* Pods_Hanakol_Aah_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */; };
 		A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */; };
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
@@ -59,9 +60,14 @@
 		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
 		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
 		A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */; };
+		A1F27F9F2A026DF60040D64A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */; };
+		A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */; };
+		A1F27FA52A0288F70040D64A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA42A0288F70040D64A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.release.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.release.xcconfig"; sourceTree = "<group>"; };
+		251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hanakol_Aah_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		A1F27FA42A0288F70040D64A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.debug.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +134,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C00550CFB26314C7B2546EF /* Pods_Hanakol_Aah_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005DD1F475E0FB9AA306055F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545BEA5583ACE1787611CC56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */,
+				0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +262,8 @@
 			children = (
 				A19224AC29D5B95700F07104 /* Hanakol Aah? */,
 				A19224AB29D5B95700F07104 /* Products */,
+				545BEA5583ACE1787611CC56 /* Pods */,
+				005DD1F475E0FB9AA306055F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +278,7 @@
 		A19224AC29D5B95700F07104 /* Hanakol Aah? */ = {
 			isa = PBXGroup;
 			children = (
+				A1F27FA02A02868C0040D64A /* Services */,
 				A19224D529D5C2B400F07104 /* CustomViews */,
 				A19224D029D5BB2900F07104 /* Resources */,
 				A19224C629D5BA3F00F07104 /* Model */,
@@ -256,6 +287,7 @@
 				A19224AD29D5B95700F07104 /* AppDelegate.swift */,
 				A19224AF29D5B95700F07104 /* SceneDelegate.swift */,
 				A19224BB29D5B96000F07104 /* Info.plist */,
+				A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */,
 			);
 			path = "Hanakol Aah?";
 			sourceTree = "<group>";
@@ -280,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */,
+				A1F27FA42A0288F70040D64A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,6 +455,22 @@
 			path = CustomComponents;
 			sourceTree = "<group>";
 		};
+		A1F27FA02A02868C0040D64A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA12A0287290040D64A /* FirebaseManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1F27FA12A0287290040D64A /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,9 +478,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19224BE29D5B96000F07104 /* Build configuration list for PBXNativeTarget "Hanakol Aah?" */;
 			buildPhases = (
+				F5E7008B1EB19B2F764395F6 /* [CP] Check Pods Manifest.lock */,
 				A19224A629D5B95700F07104 /* Sources */,
 				A19224A729D5B95700F07104 /* Frameworks */,
 				A19224A829D5B95700F07104 /* Resources */,
+				5A5238FFE0ACEB8411DF09FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,10 +552,53 @@
 				A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */,
 				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
 				A1813E4829ED7CC2008964D1 /* Tips.storyboard in Resources */,
+				A1F27F9F2A026DF60040D64A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A5238FFE0ACEB8411DF09FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E7008B1EB19B2F764395F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hanakol Aah?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A19224A629D5B95700F07104 /* Sources */ = {
@@ -513,6 +607,7 @@
 			files = (
 				A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */,
 				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
+				A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A1EA922729DF729900349299 /* HomeViewController.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
@@ -534,6 +629,7 @@
 				A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
 				A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */,
+				A1F27FA52A0288F70040D64A /* User.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,
@@ -695,6 +791,7 @@
 		};
 		A19224BF29D5B96000F07104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -722,6 +819,7 @@
 		};
 		A19224C029D5B96000F07104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
