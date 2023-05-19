@@ -153,7 +153,20 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         checkLogin(userAuth)
     }
     private func checkLogin(_ userAuth: UserAuth){
-        
+        FirebaseAuthentication.shared.login(userAuth: userAuth) { error, isEmailVerified in
+            if error == nil{
+                if isEmailVerified{
+                    let controller = CustomTabBarController.instantiateVC(name: .Home)
+                    controller.modalPresentationStyle = .fullScreen
+                    controller.modalTransitionStyle = .flipHorizontal
+                    self.present(controller, animated: true)
+                }else{
+                    UIAlertController.showAlert(msg: "Please check your email and verfiy your registration", form: self)
+                }
+            }else{
+                UIAlertController.showAlert(msg: error!.localizedDescription, form: self)
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

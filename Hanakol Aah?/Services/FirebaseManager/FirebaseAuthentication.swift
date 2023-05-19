@@ -31,5 +31,16 @@ class FirebaseAuthentication{
             }
         }
     }
+    // MARK: - Login
+    func login(userAuth: UserAuth, completion: @escaping (_ error: Error?,_ isEmailVerified: Bool) -> (Void)){
+        Auth.auth().signIn(withEmail: userAuth.email, password: userAuth.password) { authResult, error in
+            if error == nil && authResult!.user.isEmailVerified{
+                completion(error, true)
+                FirestoreManager.shared.downloadUserFromFirestore(userId: authResult!.user.uid)
+            }else{
+                completion(error, false)
+            }
+        }
+    }
     
 }

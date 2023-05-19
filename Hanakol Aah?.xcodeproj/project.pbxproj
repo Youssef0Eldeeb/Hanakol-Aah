@@ -47,6 +47,7 @@
 		A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224F629D714C500F07104 /* Onboarding.storyboard */; };
 		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 		A192250D29D8F94200F07104 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192250C29D8F94200F07104 /* Registration.storyboard */; };
+		A19F0FA22A17DBB9004C54DF /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */; };
 		A1E94DA829EC1E6B00DF114E /* ScheduleRecipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */; };
 		A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */; };
 		A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921429DD9C3500349299 /* Profile.storyboard */; };
@@ -113,6 +114,7 @@
 		A19224FC29D7150600F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A192250C29D8F94200F07104 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleRecipes.storyboard; sourceTree = "<group>"; };
 		A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRecipesViewController.swift; sourceTree = "<group>"; };
 		A1EA921429DD9C3500349299 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				A19224DF29D5C3C400F07104 /* UIView+Extension.swift */,
 				A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */,
 				A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */,
+				A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				A1813E5229ED7FC3008964D1 /* TipsTableViewCell.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */,
+				A19F0FA22A17DBB9004C54DF /* UIAlertController+Extension.swift in Sources */,
 				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
 				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,

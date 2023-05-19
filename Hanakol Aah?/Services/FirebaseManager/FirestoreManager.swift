@@ -23,6 +23,29 @@ class FirestoreManager{
             print(error.localizedDescription)
         }
     }
+    
+    func downloadUserFromFirestore(userId: String){
+        firestoreRefernce(.User).document(userId).getDocument { document, error in
+            guard let userDocument = document else{
+                return
+            }
+            
+            let result = Result{
+                try? userDocument.data(as: User.self)
+            }
+            switch result{
+            case .success(let userObject):
+                if let user = userObject{
+                    UserDefaultManager.shared.saveUserLocally(user)
+                }else{
+                    print("\n No Document Found")
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+            
+        }
+    }
 }
 
 
