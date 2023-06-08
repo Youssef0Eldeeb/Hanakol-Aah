@@ -11,12 +11,9 @@ class RegistrationViewController: UIViewController {
 
     @IBOutlet weak var registrationCollectionVeiw: UICollectionView!
     @IBOutlet weak var registerLabel: UILabel!
-    @IBOutlet weak var registerBtn: GradientColorBtn!
     @IBOutlet weak var googleBtn: UIButton!
     @IBOutlet weak var facebookBtn: UIButton!
     @IBOutlet weak var appleBtn: UIButton!
-    @IBOutlet weak var haveAcountLabel: UILabel!
-    @IBOutlet weak var loginAndCreateAcountBtn: UIButton!
     @IBOutlet weak var canRegisterUsingLabel: UILabel!
     
     override func viewDidLoad() {
@@ -31,15 +28,12 @@ class RegistrationViewController: UIViewController {
     func initUI(){
         registrationCollectionVeiw.registerNib(cell: RegistrationCollectionViewCell.self)
         registerOptionsBtnUI()
-        registerBtn.cornerRedius = registerBtn.frame.size.height / 2
+        
         canRegisterUsingLabel.text = NSLocalizedString("registerCanLoginUsing", comment: "")
         registerLabel.text = NSLocalizedString("registerCreateAccount", comment: "")
-        registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
-        haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
-        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
     }
+    
     func registerOptionsBtnUI(){
-        
         googleBtn.cornerRedius = googleBtn.frame.size.width / 2
         facebookBtn.cornerRedius = facebookBtn.frame.size.width / 2
         appleBtn.cornerRedius = appleBtn.frame.size.width / 2
@@ -65,25 +59,31 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             cell.passForgetContianer.isHidden = true
             cell.userNameContainer.isHidden = false
             cell.confirmPassContainer.isHidden = false
-            loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
-            registerBtn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+            cell.registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
+            cell.haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
+            cell.loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
+            cell.loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
+            cell.registerBtn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
             
         }else if indexPath.row == 1{ // login cell
 //            print("Login cell indexPath.row is \(indexPath.rfow)")
             cell.userNameContainer.isHidden = true
             cell.confirmPassContainer.isHidden = true
             cell.passForgetContianer.isHidden = false
-            loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
+            cell.registerBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
+            cell.loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerCreateAccount", comment: ""), for: .normal)
+            cell.haveAcountLabel.text = NSLocalizedString("registerHavn'tAcount?", comment: "")
+            cell.loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
             cell.areForgetPassBtn.addTarget(self, action: #selector(goToForgetPassScreen(_:)), for: .touchUpInside)
-            registerBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
+            cell.registerBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
         }
         return cell
     }
     @objc func slideToLoginCell(_ sender: UIButton){
         registerLabel.text = NSLocalizedString("registerLoginTitle", comment: "")
-        registerBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
-        haveAcountLabel.text = NSLocalizedString("registerHavn'tAcount?", comment: "")
-        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerCreateAccount", comment: ""), for: .normal)
+
+        
+        
         let indexPath = IndexPath(item: 1, section: 0)
         registrationCollectionVeiw.isPagingEnabled = false
         self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
@@ -92,9 +92,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     }
     @objc func slideToSignUpCell(_ sender: UIButton){
         registerLabel.text = NSLocalizedString("registerCreateAccount", comment: "")
-        registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
-        haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
-        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
+       
         let indexPath = IndexPath(item: 0, section: 0)
         registrationCollectionVeiw.isPagingEnabled = false
         self.registrationCollectionVeiw.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
@@ -109,6 +107,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     }
     
     @objc func signUp(_ sender: UIButton){
+        print(#function)
         let indexPath = IndexPath(row: 0, section: 0)
         let cell = registrationCollectionVeiw.cellForItem(at: indexPath) as! RegistrationCollectionViewCell
         let username = cell.userNameTextField.text
@@ -164,6 +163,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     }
     
     @objc func login(_ sender: UIButton){
+        print(#function)
         let indexPath = IndexPath(row: 1, section: 0)
         let cell = registrationCollectionVeiw.cellForItem(at: indexPath) as! RegistrationCollectionViewCell
         guard let email = cell.emailTextField.text,

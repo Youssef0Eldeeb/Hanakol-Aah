@@ -17,6 +17,9 @@ class RegistrationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var confirmPassContainer: TextFieldView!
     @IBOutlet weak var passForgetContianer: UIView!
     @IBOutlet weak var areForgetPassBtn: UIButton!
+    @IBOutlet weak var registerBtn: GradientColorBtn!
+    @IBOutlet weak var loginAndCreateAcountBtn: UIButton!
+    @IBOutlet weak var haveAcountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +32,10 @@ class RegistrationCollectionViewCell: UICollectionViewCell {
         passwordTextField.placeholder = NSLocalizedString("registerPassword", comment: "")
         confirmPassTextField.placeholder = NSLocalizedString("registerConfirmPass", comment: "")
         areForgetPassBtn.setTitle(NSLocalizedString("registerForgetPass", comment: ""), for: .normal)
+        registerBtn.setTitle(NSLocalizedString("registerBtn", comment: ""), for: .normal)
+        registerBtn.cornerRedius = registerBtn.frame.size.height / 2
+        haveAcountLabel.text = NSLocalizedString("registerHaveAcount?", comment: "")
+        loginAndCreateAcountBtn.setTitle(NSLocalizedString("registerLoginTitle", comment: ""), for: .normal)
     }
     
 
