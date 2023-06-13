@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -210,10 +209,10 @@
                     <connections>
                         <outlet property="appleBtn" destination="LhR-cD-D4E" id="uoP-Q4-nNe"/>
                         <outlet property="canRegisterUsingLabel" destination="SSc-Aa-vcf" id="i1i-vZ-VBA"/>
+                        <outlet property="collectionVeiw" destination="fHh-cd-m0M" id="5Wp-I9-5jw"/>
                         <outlet property="facebookBtn" destination="IfU-Rb-HHz" id="VmK-QB-0em"/>
                         <outlet property="googleBtn" destination="9TB-ei-08m" id="wqY-zW-pnQ"/>
                         <outlet property="registerLabel" destination="eUA-pg-Ekm" id="04M-Pt-geT"/>
-                        <outlet property="registrationCollectionVeiw" destination="fHh-cd-m0M" id="5Wp-I9-5jw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -876,7 +875,7 @@
         <image name="Vector 505" width="360" height="166"/>
         <image name="Vector 506" width="360" height="79"/>
         <image name="apple" width="20" height="24"/>
-        <image name="arrow.backward" catalog="system" width="32" height="32"/>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="forgetPass" width="360" height="458"/>
         <image name="verifyPass" width="360" height="400"/>
         <systemColor name="systemBackgroundColor">

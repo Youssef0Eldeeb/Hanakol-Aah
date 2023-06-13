@@ -9,6 +9,8 @@ import UIKit
 
 class RegistrationCollectionViewCell: UICollectionViewCell {
     
+    static let identifire = String(describing: RegistrationCollectionViewCell.self)
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

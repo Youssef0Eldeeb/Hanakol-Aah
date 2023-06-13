@@ -67,6 +67,7 @@
 		A1F27FA72A02A2650040D64A /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA62A02A2650040D64A /* FirestoreManager.swift */; };
 		A1F27FAA2A02AC220040D64A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */; };
 		A1F27FAC2A02ADAB0040D64A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FAB2A02ADAA0040D64A /* Constants.swift */; };
+		A1F851E52A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		A1F27FA62A02A2650040D64A /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		A1F27FAB2A02ADAA0040D64A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistraionVC+CollectionVeiw.swift"; sourceTree = "<group>"; };
 		DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.debug.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -384,12 +386,37 @@
 			isa = PBXGroup;
 			children = (
 				A192250C29D8F94200F07104 /* Registration.storyboard */,
-				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
-				A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */,
-				A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */,
-				A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */,
+				A1BFF8E12A389E24008B921E /* SignUp_Login */,
+				A1BFF8E32A389E5F008B921E /* ForgetPass */,
+				A1F851E32A389EC100C6EA39 /* CreateNewPass */,
+				A1BFF8E42A389E6E008B921E /* VerfiyPass */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		A1BFF8E12A389E24008B921E /* SignUp_Login */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
+				A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */,
+			);
+			path = SignUp_Login;
+			sourceTree = "<group>";
+		};
+		A1BFF8E32A389E5F008B921E /* ForgetPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */,
+			);
+			path = ForgetPass;
+			sourceTree = "<group>";
+		};
+		A1BFF8E42A389E6E008B921E /* VerfiyPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */,
+			);
+			path = VerfiyPass;
 			sourceTree = "<group>";
 		};
 		A1E94DA629EC1DA100DF114E /* ScheduleRecipes */ = {
@@ -489,6 +516,14 @@
 				A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */,
 			);
 			path = LocalDatabaseManager;
+			sourceTree = "<group>";
+		};
+		A1F851E32A389EC100C6EA39 /* CreateNewPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */,
+			);
+			path = CreateNewPass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,6 +693,7 @@
 				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,
 				A17AB41529EC311800D6E5EC /* ScheduleCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
+				A1F851E52A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift in Sources */,
 				A1813E4A29ED7CD6008964D1 /* TipsViewController.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,
