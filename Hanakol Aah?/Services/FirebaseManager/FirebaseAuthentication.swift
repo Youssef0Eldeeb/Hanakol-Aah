@@ -42,5 +42,10 @@ class FirebaseAuthentication{
             }
         }
     }
+    func resetPassword(email: String, completion: @escaping (_ error: Error?) -> (Void)){
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            completion(error)
+        }
+    }
     
 }

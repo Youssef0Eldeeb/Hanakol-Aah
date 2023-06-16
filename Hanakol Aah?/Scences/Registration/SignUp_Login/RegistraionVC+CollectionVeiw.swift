@@ -133,34 +133,32 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
             var count = 0
             Timer.scheduledTimer(withTimeInterval:5 , repeats: true) { timer in
                 FirebaseAuthentication.shared.login(userAuth: userAuth) { error, isEmailVerified in
-                    if error == nil {
-                        if isEmailVerified{
+                    guard error == nil else { return }
+                    if isEmailVerified{
+                        timer.invalidate()
+                        self.goToWelcomScreen()
+                    }else{
+                        count += 1
+                        if count == 12{
                             timer.invalidate()
-                            let controller = CustomTabBarController.instantiateVC(name: .Home)
-                //            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
-                            controller.modalPresentationStyle = .fullScreen
-                            controller.modalTransitionStyle = .flipHorizontal
-                            
-                            self.present(controller, animated: true) {
-                                let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
-                                profilecontroller.modalPresentationStyle = .fullScreen
-                                controller.present(profilecontroller, animated: true)
-                            }
-                        }else{
-                            count += 1
-                            if count == 12{
-                                timer.invalidate()
-                            }
                         }
-                        
                     }
                 }
             }
-            
-            
-            
         }
+    }
+    
+    private func goToWelcomScreen(){
+        let controller = CustomTabBarController.instantiateVC(name: .Home)
+        //            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .flipHorizontal
         
+        self.present(controller, animated: true) {
+            let profilecontroller = ProfileViewController.instantiateVC(name: .Profile)
+            profilecontroller.modalPresentationStyle = .fullScreen
+            controller.present(profilecontroller, animated: true)
+        }
     }
     
     

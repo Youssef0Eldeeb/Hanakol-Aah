@@ -40,7 +40,7 @@
 //Verfiy Password Screen
 
 "verfiyEmailTitle" = "تحقق من بريدك الالكتروني";
-"verfiySendCodoTo" = "تم إرسال الكود الي";
+"verfiySendCodoTo" = "تم إرسال بريد الكتوني لاعادة كلمة السر الي";
 "verfiyWasntSend" = "لم يتم الإرسال؟";
 "verfiyResend" = "إعادة إرسال";
 "verfiy" = "تحقق";

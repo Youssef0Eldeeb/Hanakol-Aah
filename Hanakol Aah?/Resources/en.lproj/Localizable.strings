@@ -39,7 +39,7 @@
 //Verfiy Password Screen
 
 "verfiyEmailTitle" = "Check your email";
-"verfiySendCodoTo" = "The code has been sent to";
+"verfiySendCodoTo" = "The reset password email has been sent to";
 "verfiyWasntSend" = "Wasn't it sent?";
 "verfiyResend" = "Resend";
 "verfiy" = "Verfiy";

@@ -40,7 +40,13 @@ class ForgetPassViewController: UIViewController {
         let controller = VerfiyPassViewController.instantiateVC(name: .Registration)
         controller.modalPresentationStyle = .fullScreen
         controller.modalTransitionStyle = .coverVertical
-        present(controller, animated: true)
+        self.present(controller, animated: true)
+        FirebaseAuthentication.shared.resetPassword(email: emailTextField.text!) { error in
+            if let error = error {
+                UIAlertController.showAlert(msg: error.localizedDescription, form: self)
+            }
+        }
+        
     }
     
 }
