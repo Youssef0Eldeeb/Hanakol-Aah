@@ -29,6 +29,15 @@ class RegistrationViewController: UIViewController {
         initUI()
         registerOptionsBtnUI()
         setupCollectionView()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    @objc func keyboardWillShow(notification: NSNotification){
+//        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{ return }
+        self.view.frame.origin.y = CGFloat(0 - 100)
     }
 
     private func initUI(){
@@ -52,3 +61,11 @@ class RegistrationViewController: UIViewController {
 }
 
 
+
+extension RegistrationViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.frame.origin.y = 0
+        textField.resignFirstResponder()
+        return true
+    }
+}

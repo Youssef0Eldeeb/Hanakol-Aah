@@ -36,7 +36,7 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
     }
     
     private func changeToSignUpCell(indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = collectionVeiw.dequeueReusableCell(withReuseIdentifier: RegistrationCollectionViewCell.identifire, for: indexPath) as! RegistrationCollectionViewCell
+        let cell = collectionVeiw.dequeue(indexPath: indexPath) as RegistrationCollectionViewCell
         cell.passForgetContianer.isHidden = true
         cell.userNameContainer.isHidden = false
         cell.confirmPassContainer.isHidden = false
@@ -46,10 +46,14 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         
         cell.loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToLoginCell(_:)), for: .touchUpInside)
         cell.registerBtn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+        cell.emailTextField.delegate = self
+        cell.userNameTextField.delegate = self
+        cell.passwordTextField.delegate = self
+        cell.confirmPassTextField.delegate = self
         return cell
     }
     private func changeToLoginCell(indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = collectionVeiw.dequeueReusableCell(withReuseIdentifier: RegistrationCollectionViewCell.identifire, for: indexPath) as! RegistrationCollectionViewCell
+        let cell = collectionVeiw.dequeue(indexPath: indexPath) as RegistrationCollectionViewCell
         cell.userNameContainer.isHidden = true
         cell.confirmPassContainer.isHidden = true
         cell.passForgetContianer.isHidden = false
@@ -60,6 +64,10 @@ extension RegistrationViewController: UICollectionViewDelegate, UICollectionView
         cell.loginAndCreateAcountBtn.addTarget(self, action: #selector(slideToSignUpCell(_:)), for: .touchUpInside)
         cell.areForgetPassBtn.addTarget(self, action: #selector(goToForgetPassScreen(_:)), for: .touchUpInside)
         cell.registerBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
+        cell.emailTextField.delegate = self
+        cell.userNameTextField.delegate = self
+        cell.passwordTextField.delegate = self
+        cell.confirmPassTextField.delegate = self
         return cell
     }
     @objc func slideToLoginCell(_ sender: UIButton){
