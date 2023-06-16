@@ -23,6 +23,8 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
         
         configView()
+        self.hideKeyboardWhenTappedAround()
+        
     }
     
     private func configView(){
@@ -36,7 +38,6 @@ class RegistrationViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     @objc func keyboardWillShow(notification: NSNotification){
-//        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{ return }
         self.view.frame.origin.y = CGFloat(0 - 100)
     }
 
@@ -67,5 +68,10 @@ extension RegistrationViewController: UITextFieldDelegate{
         self.view.frame.origin.y = 0
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.view.frame.origin.y = 0
+        textField.resignFirstResponder()
     }
 }

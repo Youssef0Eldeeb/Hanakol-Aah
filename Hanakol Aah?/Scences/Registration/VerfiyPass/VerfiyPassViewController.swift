@@ -35,10 +35,10 @@ class VerfiyPassViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func verfiyBtn(_ sender: UIButton) {
-//        let controller = CreateNewPassViewController.instantiateVC(name: .Registration)
-//        controller.modalPresentationStyle = .fullScreen
-//        controller.modalTransitionStyle = .coverVertical
-//        present(controller, animated: true)
+        let controller = RegistrationViewController.instantiateVC(name: .Registration)
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
+        present(controller, animated: true)
     }
     
 }

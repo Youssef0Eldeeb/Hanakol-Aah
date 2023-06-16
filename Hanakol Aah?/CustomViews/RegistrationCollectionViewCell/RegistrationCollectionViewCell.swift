@@ -26,6 +26,9 @@ class RegistrationCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         initUI()
+        
+        passwordTextField.textContentType = .oneTimeCode
+        confirmPassTextField.textContentType = .oneTimeCode
     }
     
     func initUI(){

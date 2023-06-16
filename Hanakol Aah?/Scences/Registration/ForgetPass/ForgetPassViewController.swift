@@ -21,6 +21,16 @@ class ForgetPassViewController: UIViewController {
         super.viewDidLoad()
 
         initUI()
+        emailTextField.delegate = self
+        self.hideKeyboardWhenTappedAround()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    @objc func keyboardWillShow(notification: NSNotification){
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{ return }
+        self.view.frame.origin.y = 0 - keyboardSize.height
     }
     
     func initUI(){
@@ -37,16 +47,33 @@ class ForgetPassViewController: UIViewController {
     }
     
     @IBAction func sendBtn(_ sender: UIButton) {
-        let controller = VerfiyPassViewController.instantiateVC(name: .Registration)
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .coverVertical
-        self.present(controller, animated: true)
+        
         FirebaseAuthentication.shared.resetPassword(email: emailTextField.text!) { error in
             if let error = error {
                 UIAlertController.showAlert(msg: error.localizedDescription, form: self)
+            }else{
+                let controller = VerfiyPassViewController.instantiateVC(name: .Registration)
+                controller.modalPresentationStyle = .fullScreen
+                controller.modalTransitionStyle = .coverVertical
+                self.present(controller, animated: true)
             }
+            
         }
         
     }
     
+}
+
+
+extension ForgetPassViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.frame.origin.y = 0
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.view.frame.origin.y = 0
+        textField.resignFirstResponder()
+    }
 }
