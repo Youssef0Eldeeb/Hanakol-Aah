@@ -14,18 +14,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var mealsCollectionView: UICollectionView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initUI()
         registerCollectionView()
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        initUI()
-//    }
     
-
     func initUI(){
         searchView.layer.borderWidth = 1
         searchView.layer.borderColor = UIColor.orange.cgColor
@@ -76,24 +71,4 @@ class HomeViewController: UIViewController {
     }
 
 }
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    func registerCollectionView(){
-        mealsCollectionView.registerNib(cell: HomeMealsCollectionViewCell.self)
-        mealsCollectionView.delegate = self
-        mealsCollectionView.dataSource = self
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = mealsCollectionView.dequeue(indexPath: indexPath) as HomeMealsCollectionViewCell
-        
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: mealsCollectionView.frame.width, height: mealsCollectionView.frame.height)
-    }
-    
-    
-}
+

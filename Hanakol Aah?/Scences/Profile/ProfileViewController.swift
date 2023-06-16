@@ -10,28 +10,20 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
-    
     @IBOutlet weak var edit01Btn: UIButton!
     @IBOutlet weak var confirm01Btn: UIButton!
     @IBOutlet weak var confirmBtnView: UIView!
-    
     @IBOutlet weak var edit02Btn: UIButton!
-    
     @IBOutlet weak var confirm02Btn: UIButton!
-    
     @IBOutlet weak var confirm02BtnView: UIView!
-    
     @IBOutlet weak var traditianalDietView: UIView!
     @IBOutlet weak var healthyDietView: UIView!
     @IBOutlet weak var vegetarianDietView: UIView!
     @IBOutlet weak var ketogenicDietView: UIView!
-    
-  
     @IBOutlet weak var tradionalDietCheckBtn: UIButton!
     @IBOutlet weak var healthyDietCheckBtn: UIButton!
     @IBOutlet weak var vegetarianDietCheckBtn: UIButton!
     @IBOutlet weak var ketogenicDietCheckBtn: UIButton!
-    
     @IBOutlet weak var doneBtn: UIButton!
     
     var dietType: DietType!
@@ -39,10 +31,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         initUI()
     }
-    
     
     @IBAction func foodTypeBtn(_ sender: UIButton) {
         tradionalDietCheckBtn.backgroundColor = .none

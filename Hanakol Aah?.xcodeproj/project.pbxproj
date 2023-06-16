@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C00550CFB26314C7B2546EF /* Pods_Hanakol_Aah_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */; };
+		A1059E4F2A3D1F61004248DA /* HomeVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */; };
+		A1059E512A3D2023004248DA /* OnboardingVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */; };
 		A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */; };
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
@@ -73,6 +75,8 @@
 /* Begin PBXFileReference section */
 		0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.release.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.release.xcconfig"; sourceTree = "<group>"; };
 		251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hanakol_Aah_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+CollectionView.swift"; sourceTree = "<group>"; };
+		A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingVC+CollectionView.swift"; sourceTree = "<group>"; };
 		A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +350,7 @@
 			children = (
 				A19224F629D714C500F07104 /* Onboarding.storyboard */,
 				A19224E529D5C61500F07104 /* OnboardingViewController.swift */,
+				A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 			children = (
 				A1EA921D29DEF49B00349299 /* Home.storyboard */,
 				A1EA922629DF729900349299 /* HomeViewController.swift */,
+				A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -673,11 +679,13 @@
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
 				A1781E5229E38D730098AB31 /* FridgeItemsCollectionViewCell.swift in Sources */,
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
+				A1059E512A3D2023004248DA /* OnboardingVC+CollectionView.swift in Sources */,
 				A1813E5229ED7FC3008964D1 /* TipsTableViewCell.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */,
 				A19F0FA22A17DBB9004C54DF /* UIAlertController+Extension.swift in Sources */,
 				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
+				A1059E4F2A3D1F61004248DA /* HomeVC+CollectionView.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
 				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,
 				A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */,
