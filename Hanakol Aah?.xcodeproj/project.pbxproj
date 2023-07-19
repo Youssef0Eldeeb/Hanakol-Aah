@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C00550CFB26314C7B2546EF /* Pods_Hanakol_Aah_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */; };
+		A1059E4F2A3D1F61004248DA /* HomeVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */; };
+		A1059E512A3D2023004248DA /* OnboardingVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */; };
 		A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */; };
 		A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */; };
 		A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */; };
@@ -46,6 +49,7 @@
 		A19224F429D714C500F07104 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19224F629D714C500F07104 /* Onboarding.storyboard */; };
 		A19224FB29D7150600F07104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19224FD29D7150600F07104 /* Localizable.strings */; };
 		A192250D29D8F94200F07104 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192250C29D8F94200F07104 /* Registration.storyboard */; };
+		A19F0FA22A17DBB9004C54DF /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */; };
 		A1E94DA829EC1E6B00DF114E /* ScheduleRecipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */; };
 		A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */; };
 		A1EA921529DD9C3500349299 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EA921429DD9C3500349299 /* Profile.storyboard */; };
@@ -59,9 +63,20 @@
 		A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */; };
 		A1EBC8F929D995EF00AA5C93 /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */; };
 		A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */; };
+		A1F27F9F2A026DF60040D64A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */; };
+		A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */; };
+		A1F27FA52A0288F70040D64A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA42A0288F70040D64A /* User.swift */; };
+		A1F27FA72A02A2650040D64A /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA62A02A2650040D64A /* FirestoreManager.swift */; };
+		A1F27FAA2A02AC220040D64A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */; };
+		A1F27FAC2A02ADAB0040D64A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F27FAB2A02ADAA0040D64A /* Constants.swift */; };
+		A1F851E52A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.release.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.release.xcconfig"; sourceTree = "<group>"; };
+		251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hanakol_Aah_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+CollectionView.swift"; sourceTree = "<group>"; };
+		A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingVC+CollectionView.swift"; sourceTree = "<group>"; };
 		A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyPassViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +119,7 @@
 		A19224FC29D7150600F07104 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19224FE29D7150A00F07104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A192250C29D8F94200F07104 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		A1E94DA729EC1E6B00DF114E /* ScheduleRecipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleRecipes.storyboard; sourceTree = "<group>"; };
 		A1E94DA929EC1E8100DF114E /* ScheduleRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRecipesViewController.swift; sourceTree = "<group>"; };
 		A1EA921429DD9C3500349299 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -117,6 +133,14 @@
 		A1EBC8F629D995EF00AA5C93 /* RegistrationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1EBC8F729D995EF00AA5C93 /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1EBC8FB29D997D300AA5C93 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		A1F27FA42A0288F70040D64A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1F27FA62A02A2650040D64A /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		A1F27FAB2A02ADAA0040D64A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistraionVC+CollectionVeiw.swift"; sourceTree = "<group>"; };
+		DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanakol Aah?.debug.xcconfig"; path = "Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +148,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C00550CFB26314C7B2546EF /* Pods_Hanakol_Aah_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005DD1F475E0FB9AA306055F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251D137C9DBD2CA88353DEAF /* Pods_Hanakol_Aah_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545BEA5583ACE1787611CC56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */,
+				0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1781E3C29E2E06C0098AB31 /* HomeMealsCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +276,8 @@
 			children = (
 				A19224AC29D5B95700F07104 /* Hanakol Aah? */,
 				A19224AB29D5B95700F07104 /* Products */,
+				545BEA5583ACE1787611CC56 /* Pods */,
+				005DD1F475E0FB9AA306055F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +292,7 @@
 		A19224AC29D5B95700F07104 /* Hanakol Aah? */ = {
 			isa = PBXGroup;
 			children = (
+				A1F27FA02A02868C0040D64A /* Services */,
 				A19224D529D5C2B400F07104 /* CustomViews */,
 				A19224D029D5BB2900F07104 /* Resources */,
 				A19224C629D5BA3F00F07104 /* Model */,
@@ -256,6 +301,8 @@
 				A19224AD29D5B95700F07104 /* AppDelegate.swift */,
 				A19224AF29D5B95700F07104 /* SceneDelegate.swift */,
 				A19224BB29D5B96000F07104 /* Info.plist */,
+				A1F27F9E2A026DF50040D64A /* GoogleService-Info.plist */,
+				A1F27FAB2A02ADAA0040D64A /* Constants.swift */,
 			);
 			path = "Hanakol Aah?";
 			sourceTree = "<group>";
@@ -280,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				A19224E129D5C4EB00F07104 /* OnboardingSlides.swift */,
+				A1F27FA42A0288F70040D64A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +340,7 @@
 				A19224DF29D5C3C400F07104 /* UIView+Extension.swift */,
 				A1781E4629E2E82D0098AB31 /* UITableView+Extension.swift */,
 				A148BDC129F813AB0059868B /* UserDefaults+Extension.swift */,
+				A19F0FA12A17DBB9004C54DF /* UIAlertController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +350,7 @@
 			children = (
 				A19224F629D714C500F07104 /* Onboarding.storyboard */,
 				A19224E529D5C61500F07104 /* OnboardingViewController.swift */,
+				A1059E502A3D2023004248DA /* OnboardingVC+CollectionView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -341,12 +391,37 @@
 			isa = PBXGroup;
 			children = (
 				A192250C29D8F94200F07104 /* Registration.storyboard */,
-				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
-				A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */,
-				A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */,
-				A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */,
+				A1BFF8E12A389E24008B921E /* SignUp_Login */,
+				A1BFF8E32A389E5F008B921E /* ForgetPass */,
+				A1F851E32A389EC100C6EA39 /* CreateNewPass */,
+				A1BFF8E42A389E6E008B921E /* VerfiyPass */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		A1BFF8E12A389E24008B921E /* SignUp_Login */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBC8F329D9070B00AA5C93 /* RegistrationViewController.swift */,
+				A1F851E42A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift */,
+			);
+			path = SignUp_Login;
+			sourceTree = "<group>";
+		};
+		A1BFF8E32A389E5F008B921E /* ForgetPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF229DB07E600959EEF /* ForgetPassViewController.swift */,
+			);
+			path = ForgetPass;
+			sourceTree = "<group>";
+		};
+		A1BFF8E42A389E6E008B921E /* VerfiyPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF429DB211500959EEF /* VerfiyPassViewController.swift */,
+			);
+			path = VerfiyPass;
 			sourceTree = "<group>";
 		};
 		A1E94DA629EC1DA100DF114E /* ScheduleRecipes */ = {
@@ -390,6 +465,7 @@
 			children = (
 				A1EA921D29DEF49B00349299 /* Home.storyboard */,
 				A1EA922629DF729900349299 /* HomeViewController.swift */,
+				A1059E4E2A3D1F61004248DA /* HomeVC+CollectionView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -422,6 +498,40 @@
 			path = CustomComponents;
 			sourceTree = "<group>";
 		};
+		A1F27FA02A02868C0040D64A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA82A02ABD70040D64A /* LocalDatabaseManager */,
+				A1F27FA12A0287290040D64A /* FirebaseManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1F27FA12A0287290040D64A /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA22A02876B0040D64A /* FirebaseAuthentication.swift */,
+				A1F27FA62A02A2650040D64A /* FirestoreManager.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		A1F27FA82A02ABD70040D64A /* LocalDatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1F27FA92A02AC220040D64A /* UserDefaultManager.swift */,
+			);
+			path = LocalDatabaseManager;
+			sourceTree = "<group>";
+		};
+		A1F851E32A389EC100C6EA39 /* CreateNewPass */ = {
+			isa = PBXGroup;
+			children = (
+				A15D5AF629DB62B700959EEF /* CreateNewPassViewController.swift */,
+			);
+			path = CreateNewPass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,9 +539,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19224BE29D5B96000F07104 /* Build configuration list for PBXNativeTarget "Hanakol Aah?" */;
 			buildPhases = (
+				F5E7008B1EB19B2F764395F6 /* [CP] Check Pods Manifest.lock */,
 				A19224A629D5B95700F07104 /* Sources */,
 				A19224A729D5B95700F07104 /* Frameworks */,
 				A19224A829D5B95700F07104 /* Resources */,
+				5A5238FFE0ACEB8411DF09FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,10 +613,53 @@
 				A17AB41629EC311800D6E5EC /* ScheduleCollectionViewCell.xib in Resources */,
 				A1781E4529E2E7730098AB31 /* HomeMealsTableViewCell.xib in Resources */,
 				A1813E4829ED7CC2008964D1 /* Tips.storyboard in Resources */,
+				A1F27F9F2A026DF60040D64A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A5238FFE0ACEB8411DF09FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanakol Aah?/Pods-Hanakol Aah?-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E7008B1EB19B2F764395F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hanakol Aah?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A19224A629D5B95700F07104 /* Sources */ = {
@@ -512,19 +667,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1781E4429E2E7730098AB31 /* HomeMealsTableViewCell.swift in Sources */,
+				A1F27FA72A02A2650040D64A /* FirestoreManager.swift in Sources */,
 				A15D5AF529DB211500959EEF /* VerfiyPassViewController.swift in Sources */,
+				A1F27FA32A02876B0040D64A /* FirebaseAuthentication.swift in Sources */,
 				A19224E229D5C4EB00F07104 /* OnboardingSlides.swift in Sources */,
 				A1EA922729DF729900349299 /* HomeViewController.swift in Sources */,
+				A1F27FAA2A02AC220040D64A /* UserDefaultManager.swift in Sources */,
 				A19224DE29D5C3B100F07104 /* UICollectionView+Extension.swift in Sources */,
 				A19224AE29D5B95700F07104 /* AppDelegate.swift in Sources */,
 				A1EBC8FC29D997D300AA5C93 /* TextFieldView.swift in Sources */,
 				A15D5AF729DB62B700959EEF /* CreateNewPassViewController.swift in Sources */,
 				A1781E5229E38D730098AB31 /* FridgeItemsCollectionViewCell.swift in Sources */,
 				A1EA921729DD9CD400349299 /* ProfileViewController.swift in Sources */,
+				A1059E512A3D2023004248DA /* OnboardingVC+CollectionView.swift in Sources */,
 				A1813E5229ED7FC3008964D1 /* TipsTableViewCell.swift in Sources */,
 				A15D5AF329DB07E600959EEF /* ForgetPassViewController.swift in Sources */,
 				A1781E5B29E38EC10098AB31 /* FridgeItemsVerticalCollectionViewCell.swift in Sources */,
+				A19F0FA22A17DBB9004C54DF /* UIAlertController+Extension.swift in Sources */,
 				A1781E4C29E3865C0098AB31 /* FridgeViewController.swift in Sources */,
+				A1059E4F2A3D1F61004248DA /* HomeVC+CollectionView.swift in Sources */,
 				A1EA922229DEF8F700349299 /* CustomTabBarController.swift in Sources */,
 				A1781E4729E2E82D0098AB31 /* UITableView+Extension.swift in Sources */,
 				A1E94DAA29EC1E8100DF114E /* ScheduleRecipesViewController.swift in Sources */,
@@ -534,14 +695,17 @@
 				A1813E4529ED77B9008964D1 /* MealScanViewController.swift in Sources */,
 				A19224B029D5B95700F07104 /* SceneDelegate.swift in Sources */,
 				A148BDC229F813AB0059868B /* UserDefaults+Extension.swift in Sources */,
+				A1F27FA52A0288F70040D64A /* User.swift in Sources */,
 				A19224DC29D5C39600F07104 /* UIViewController+Extensions.swift in Sources */,
 				A19224D929D5C2F300F07104 /* OnboardingCollectionViewCell.swift in Sources */,
 				A17AB41929EC314C00D6E5EC /* ScheduleTableViewCell.swift in Sources */,
 				A17AB41529EC311800D6E5EC /* ScheduleCollectionViewCell.swift in Sources */,
 				A19224E029D5C3C400F07104 /* UIView+Extension.swift in Sources */,
+				A1F851E52A389F6700C6EA39 /* RegistraionVC+CollectionVeiw.swift in Sources */,
 				A1813E4A29ED7CD6008964D1 /* TipsViewController.swift in Sources */,
 				A1EA921929DDA83E00349299 /* CardView.swift in Sources */,
 				A1781E3F29E2E0CD0098AB31 /* HomeMealsCollectionViewCell.swift in Sources */,
+				A1F27FAC2A02ADAB0040D64A /* Constants.swift in Sources */,
 				A1EBC8F829D995EF00AA5C93 /* RegistrationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,6 +859,7 @@
 		};
 		A19224BF29D5B96000F07104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8E22DB27EEF8A3AC7A0844 /* Pods-Hanakol Aah?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -722,6 +887,7 @@
 		};
 		A19224C029D5B96000F07104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2C468591011A62286EDF2F /* Pods-Hanakol Aah?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

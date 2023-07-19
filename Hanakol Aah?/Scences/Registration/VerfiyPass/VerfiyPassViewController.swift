@@ -12,8 +12,6 @@ class VerfiyPassViewController: UIViewController {
     @IBOutlet weak var verfiyYourEmailTitle: UILabel!
     @IBOutlet weak var codeSendLabel: UILabel!
     @IBOutlet weak var userEmailLabel: UILabel!
-    @IBOutlet weak var notSendLabel: UILabel!
-    @IBOutlet weak var resendBtn: UIButton!
     @IBOutlet weak var CurvedView: UIView!
     @IBOutlet weak var verfiyBtn: GradientColorBtn!
     
@@ -25,12 +23,10 @@ class VerfiyPassViewController: UIViewController {
     
     func initUI(){
         CurvedView.cornerRedius = 20
-        verfiyBtn.cornerRedius = 30
+        verfiyBtn.cornerRedius = verfiyBtn.frame.size.height / 2
         
         verfiyYourEmailTitle.text = NSLocalizedString("verfiyEmailTitle", comment: "")
         codeSendLabel.text = NSLocalizedString("verfiySendCodoTo", comment: "")
-        notSendLabel.text = NSLocalizedString("verfiyWasntSend", comment: "")
-        resendBtn.setTitle(NSLocalizedString("verfiyResend", comment: ""), for: .normal)
         verfiyBtn.setTitle(NSLocalizedString("verfiy", comment: ""), for: .normal)
         
     }
@@ -39,9 +35,9 @@ class VerfiyPassViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func verfiyBtn(_ sender: UIButton) {
-        let controller = CreateNewPassViewController.instantiateVC(name: .Registration)
+        let controller = RegistrationViewController.instantiateVC(name: .Registration)
         controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .coverVertical
+        controller.modalTransitionStyle = .crossDissolve
         present(controller, animated: true)
     }
     
